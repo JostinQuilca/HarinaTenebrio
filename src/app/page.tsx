@@ -1,77 +1,89 @@
 import Image from "next/image";
 import { menuData } from "@/lib/data";
 import type { Course } from "@/lib/types";
-import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, ChefHat, ChevronDown } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, ChefHat } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const CourseCard = ({ course }: { course: Course }) => (
-  <div className="bg-card rounded-xl shadow-sm overflow-hidden border border-border/80 flex flex-col">
-    <div className="relative w-full h-56">
-      <Image 
-        src={course.image.src} 
-        alt={course.image.alt} 
-        fill 
-        className="object-cover"
-        data-ai-hint={course.image.aiHint}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-      />
+  <Dialog>
+    <div className="bg-card rounded-xl shadow-sm overflow-hidden border border-border/80 flex flex-col">
+      <div className="relative w-full h-56">
+        <Image 
+          src={course.image.src} 
+          alt={course.image.alt} 
+          fill 
+          className="object-cover"
+          data-ai-hint={course.image.aiHint}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
+      <div className="p-6 flex-grow flex flex-col">
+        <p className="text-xs font-bold text-accent uppercase tracking-widest">{course.courseNumber}</p>
+        <h3 className="font-headline text-2xl md:text-3xl text-primary mt-1">{course.title}</h3>
+        <p className="mt-3 text-sm text-muted-foreground text-pretty flex-grow">{course.description}</p>
+      </div>
+      <div className="px-6 pb-6 pt-2 border-t border-border/60">
+        <DialogTrigger asChild>
+          <Button variant="outline" className="w-full">Ver más detalles</Button>
+        </DialogTrigger>
+      </div>
     </div>
-    <div className="p-6 flex-grow flex flex-col">
-      <p className="text-xs font-bold text-accent uppercase tracking-widest">{course.courseNumber}</p>
-      <h3 className="font-headline text-2xl md:text-3xl text-primary mt-1">{course.title}</h3>
-      <p className="mt-3 text-sm text-muted-foreground text-pretty flex-grow">{course.description}</p>
-    </div>
-    <div className="px-6 pb-6 pt-2">
-       <Accordion type="single" collapsible className="w-full">
-        <AccordionItem value="item-1" className="border-t border-border/60">
-          <AccordionTrigger className="text-sm font-semibold text-primary hover:text-accent focus:text-accent py-4">
-            Ver más detalles
-            <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
-          </AccordionTrigger>
-          <AccordionContent>
-            <div className="pt-2 space-y-6 text-sm">
-              <div className="space-y-3">
-                <h4 className="flex items-center gap-3 font-headline text-base text-primary"><BookHeart className="w-4 h-4 text-accent flex-shrink-0"/>Storytelling</h4>
-                <p className="text-muted-foreground text-pretty leading-relaxed text-xs">{course.storytelling}</p>
-              </div>
 
-              <div className="space-y-3">
-                <h4 className="flex items-center gap-3 font-headline text-base text-primary"><ListOrdered className="w-4 h-4 text-accent flex-shrink-0"/>Pasos Clave</h4>
-                <ol className="list-decimal list-outside pl-4 space-y-1.5 text-muted-foreground text-xs marker:text-primary/80 marker:font-semibold">
-                  {course.steps.map((step, i) => <li key={i}>{step}</li>)}
-                </ol>
-              </div>
+    <DialogContent className="max-w-2xl">
+      <DialogHeader>
+        <p className="text-sm font-bold text-accent uppercase tracking-widest">{course.courseNumber}</p>
+        <DialogTitle className="font-headline text-3xl md:text-4xl text-primary">{course.title}</DialogTitle>
+      </DialogHeader>
+      <ScrollArea className="max-h-[70vh] pr-6">
+        <div className="space-y-6 text-sm py-4">
+          <div className="space-y-3">
+            <h4 className="flex items-center gap-3 font-headline text-base text-primary"><BookHeart className="w-4 h-4 text-accent flex-shrink-0"/>Storytelling</h4>
+            <p className="text-muted-foreground text-pretty leading-relaxed text-xs">{course.storytelling}</p>
+          </div>
 
-              <div className="grid grid-cols-2 gap-4 text-xs">
-                <div className="space-y-2">
-                  <h4 className="flex items-center gap-2 font-headline text-primary"><FlaskConical className="w-3.5 h-3.5 text-accent flex-shrink-0"/>Técnicas</h4>
-                  <p className="text-muted-foreground">{course.techniques}</p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="flex items-center gap-2 font-headline text-primary"><Smile className="w-3.5 h-3.5 text-accent flex-shrink-0"/>Perfil</h4>
-                  <p className="text-muted-foreground">{course.sensoryProfile}</p>
-                </div>
-              </div>
+          <div className="space-y-3">
+            <h4 className="flex items-center gap-3 font-headline text-base text-primary"><ListOrdered className="w-4 h-4 text-accent flex-shrink-0"/>Pasos Clave</h4>
+            <ol className="list-decimal list-outside pl-4 space-y-1.5 text-muted-foreground text-xs marker:text-primary/80 marker:font-semibold">
+              {course.steps.map((step, i) => <li key={i}>{step}</li>)}
+            </ol>
+          </div>
 
-              <div className="space-y-3 pt-4 border-t border-border/60">
-                  <h4 className="flex items-center gap-3 font-headline text-base text-primary"><Leaf className="w-4 h-4 text-accent flex-shrink-0"/>Sostenibilidad (ODS)</h4>
-                  <ul className="list-disc list-outside pl-4 space-y-1 text-muted-foreground text-xs">
-                    {course.ods.map((ods, i) => <li key={i}>{ods}</li>)}
-                  </ul>
-              </div>
-              
-              <div className="space-y-3 bg-muted/50 p-3 rounded-lg">
-                  <h4 className="flex items-center gap-3 font-headline text-base text-primary"><School className="w-4 h-4 text-accent flex-shrink-0"/>Sustento Académico</h4>
-                  <blockquote className="border-l-2 border-accent pl-3 italic text-muted-foreground text-pretty text-xs">
-                    {course.academicSustenance}
-                  </blockquote>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div className="space-y-2">
+              <h4 className="flex items-center gap-2 font-headline text-primary"><FlaskConical className="w-3.5 h-3.5 text-accent flex-shrink-0"/>Técnicas</h4>
+              <p className="text-muted-foreground">{course.techniques}</p>
             </div>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
-    </div>
-  </div>
+            <div className="space-y-2">
+              <h4 className="flex items-center gap-2 font-headline text-primary"><Smile className="w-3.5 h-3.5 text-accent flex-shrink-0"/>Perfil</h4>
+              <p className="text-muted-foreground">{course.sensoryProfile}</p>
+            </div>
+          </div>
+
+          <div className="space-y-3 pt-4 border-t border-border/60">
+              <h4 className="flex items-center gap-3 font-headline text-base text-primary"><Leaf className="w-4 h-4 text-accent flex-shrink-0"/>Sostenibilidad (ODS)</h4>
+              <ul className="list-disc list-outside pl-4 space-y-1 text-muted-foreground text-xs">
+                {course.ods.map((ods, i) => <li key={i}>{ods}</li>)}
+              </ul>
+          </div>
+          
+          <div className="space-y-3 bg-muted/50 p-3 rounded-lg">
+              <h4 className="flex items-center gap-3 font-headline text-base text-primary"><School className="w-4 h-4 text-accent flex-shrink-0"/>Sustento Académico</h4>
+              <blockquote className="border-l-2 border-accent pl-3 italic text-muted-foreground text-pretty text-xs">
+                {course.academicSustenance}
+              </blockquote>
+          </div>
+        </div>
+      </ScrollArea>
+    </DialogContent>
+  </Dialog>
 );
 
 export default function OchoTiemposPage() {
