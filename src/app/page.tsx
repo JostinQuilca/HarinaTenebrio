@@ -59,7 +59,7 @@ export default function OchoTiemposPage() {
       
       <main className="flex-grow container mx-auto px-4 pb-12 md:pb-24">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-            <h2 className="font-headline text-3xl md:text-4xl text-primary">El Viaje Universitario</h2>
+            <h2 className="font-headline text-3xl md:text-4xl text-primary">Aplicación de harina de Tenebrio Molitor en un menú de 8 tiempos</h2>
             <p className="mt-4 text-base md:text-lg text-muted-foreground leading-relaxed">
                 Una travesía culinaria que narra las etapas de la vida universitaria, fusionando tradición e innovación sostenible. Cada plato, una historia. Cada bocado, una lección aprendida.
             </p>

@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Ocho Tiempos',
+  title: 'Aplicación de harina de Tenebrio Molitor en un menú de 8 tiempos',
   description: 'Un menú conceptual sobre la vida universitaria.',
 };
 
