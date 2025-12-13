@@ -5,7 +5,7 @@ import type { Course } from "@/lib/types";
 import { BookHeart, ChevronDown, FlaskConical, Leaf, ListOrdered, School, Smile } from "lucide-react";
 
 const CourseDetails = ({ course }: { course: Course }) => (
-  <div className="border-t border-border pt-6 space-y-8 text-base">
+  <div className="border-t border-border/80 pt-6 space-y-8 text-base">
     <div className="space-y-3">
       <h4 className="flex items-center gap-3 font-headline text-xl text-primary"><BookHeart className="w-5 h-5 text-accent flex-shrink-0"/>Storytelling: La Vida Universitaria</h4>
       <p className="text-muted-foreground text-pretty leading-relaxed">{course.storytelling}</p>
@@ -50,28 +50,28 @@ const CourseDetails = ({ course }: { course: Course }) => (
 export default function OchoTiemposPage() {
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
-      <header className="py-8 md:py-12">
+      <header className="py-12 md:py-16">
         <div className="container mx-auto text-center px-4">
-          <h1 className="font-headline text-5xl md:text-7xl text-primary tracking-tighter">Ocho Tiempos</h1>
-          <p className="mt-2 text-lg md:text-xl text-muted-foreground">Un Menú Conceptual</p>
+          <p className="font-headline text-4xl md:text-5xl text-primary tracking-tighter">Ocho Tiempos</p>
+          <p className="mt-1 text-lg md:text-xl text-muted-foreground">Un Menú Conceptual</p>
         </div>
       </header>
       
       <main className="flex-grow container mx-auto px-4 pb-12 md:pb-24">
-        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-            <h2 className="font-headline text-3xl md:text-4xl text-primary">Aplicación de harina de Tenebrio Molitor en un menú de 8 tiempos</h2>
-            <p className="mt-4 text-base md:text-lg text-muted-foreground leading-relaxed">
+        <div className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
+            <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl text-primary/90 leading-tight">Aplicación de harina de Tenebrio Molitor en un menú de 8 tiempos</h1>
+            <p className="mt-4 text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 Una travesía culinaria que narra las etapas de la vida universitaria, fusionando tradición e innovación sostenible. Cada plato, una historia. Cada bocado, una lección aprendida.
             </p>
         </div>
         
-        <Accordion type="single" collapsible className="w-full max-w-5xl mx-auto space-y-6">
+        <Accordion type="single" collapsible className="w-full max-w-5xl mx-auto space-y-4">
           {menuData.map((course) => (
             <AccordionItem key={course.id} value={`item-${course.id}`} className="border-none">
-              <div className="border border-border bg-card rounded-xl shadow-sm overflow-hidden transition-all duration-300 hover:shadow-lg focus-within:shadow-lg data-[state=open]:shadow-xl">
+              <div className="border border-border/70 bg-card rounded-xl shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md focus-within:shadow-md data-[state=open]:shadow-lg data-[state=open]:border-border">
                 <AccordionTrigger className="p-4 md:p-6 text-left hover:no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-ring ring-offset-background rounded-xl">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 md:gap-6 w-full">
-                    <div className="w-full sm:w-32 md:w-40 h-32 sm:h-auto sm:aspect-square flex-shrink-0 rounded-lg overflow-hidden relative group">
+                    <div className="w-full sm:w-32 md:w-40 h-40 sm:h-auto sm:aspect-square flex-shrink-0 rounded-lg overflow-hidden relative group">
                       <Image 
                         src={course.image.src} 
                         alt={course.image.alt} 
@@ -98,7 +98,7 @@ export default function OchoTiemposPage() {
         </Accordion>
       </main>
       
-      <footer className="py-6 mt-12 border-t border-border/80">
+      <footer className="py-8 mt-16 border-t border-border/80">
         <div className="container mx-auto text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Ocho Tiempos. Un concepto gastronómico innovador.</p>
         </div>
