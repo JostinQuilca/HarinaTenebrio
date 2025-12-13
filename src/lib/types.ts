@@ -10,7 +10,4 @@ export interface Course {
   sensoryProfile: string;
   ods: string[];
   academicSustenance: string;
-  image: {
-    id: string;
-  };
 }

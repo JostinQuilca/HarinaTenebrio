@@ -1,13 +1,4 @@
 import type { Course } from "./types";
-import { PlaceHolderImages } from "./placeholder-images";
-
-const getImage = (id: string) => {
-  const image = PlaceHolderImages.find((img) => img.id === id);
-  if (!image) {
-    return { src: "", alt: "Placeholder", aiHint: "" };
-  }
-  return { src: image.imageUrl, alt: image.description, aiHint: image.imageHint };
-};
 
 export const menuData: Course[] = [
   {
@@ -37,7 +28,6 @@ export const menuData: Course[] = [
       "ODS 12: Producción y consumo responsables, mediante el uso de ingredientes de bajo impacto ambiental.",
     ],
     academicSustenance: "La entomofagia, o consumo de insectos, es una práctica ancestral que actualmente se investiga como solución a la crisis alimentaria global, ofreciendo una fuente de proteína de alta calidad con una baja huella ecológica (van Huis et al., 2013).",
-    image: { id: "focaccia-bread" },
   },
   {
     id: 2,
@@ -65,7 +55,6 @@ export const menuData: Course[] = [
       "ODS 13: Acción por el clima, al priorizar ingredientes de bajo impacto hídrico y de carbono.",
     ],
     academicSustenance: "El uso de harinas de insectos en la panadería y repostería no solo mejora el perfil nutricional del producto final, sino que también reduce la dependencia de harinas tradicionales con mayor impacto ambiental (Duda et al., 2019).",
-    image: { id: "mango-sorbet" },
   },
   {
     id: 3,
@@ -93,7 +82,6 @@ export const menuData: Course[] = [
       "ODS 15: Vida de ecosistemas terrestres, al reducir la presión sobre la agricultura convencional.",
     ],
     academicSustenance: "La integración de ingredientes sostenibles en recetas tradicionales es una forma de preservar la cultura gastronómica mientras se adapta a los desafíos ambientales del siglo XXI (UNESCO, 2020).",
-    image: { id: "gyoza-dumplings" },
   },
   {
     id: 4,
@@ -121,7 +109,6 @@ export const menuData: Course[] = [
       "ODS 9: Industria, innovación e infraestructura, aplicando nuevas tecnologías alimentarias.",
     ],
     academicSustenance: "La adición de harinas alternativas a la pasta fresca puede mejorar su valor nutricional, especialmente en términos de proteínas y minerales, sin alterar significativamente sus propiedades reológicas (Bonomi et al., 2016).",
-    image: { id: "ravioli-pasta" },
   },
   {
     id: 5,
@@ -149,7 +136,6 @@ export const menuData: Course[] = [
       "ODS 8: Trabajo decente y crecimiento económico, fomentando la innovación en la cadena de valor alimentaria.",
     ],
     academicSustenance: "El uso de insectos en la alimentación no solo es sostenible, sino que también puede mejorar la seguridad alimentaria en comunidades vulnerables, al ser una fuente de ingresos y nutrientes de fácil acceso (FAO, 2013).",
-    image: { id: "yuca-croquette" },
   },
   {
     id: 6,
@@ -176,7 +162,6 @@ export const menuData: Course[] = [
       "ODS 13: Acción por el clima, reduciendo la huella de carbono de los postres.",
     ],
     academicSustenance: "La innovación en pastelería mediante el uso de ingredientes no convencionales como la harina de insectos permite crear productos con perfiles de sabor novedosos y un menor impacto ambiental, respondiendo a las demandas del consumidor consciente (Orkusz et al., 2020).",
-    image: { id: "fraisier-cake" },
   },
   {
     id: 7,
@@ -203,7 +188,6 @@ export const menuData: Course[] = [
       "ODS 17: Alianzas para lograr los objetivos, al conectar gastronomía, ciencia y sostenibilidad.",
     ],
     academicSustenance: "La cocina de vanguardia busca constantemente desafiar los límites de la gastronomía, no solo en la técnica y presentación, sino también en el origen y la sostenibilidad de sus ingredientes, abriendo camino a una nueva era culinaria (Aduriz, 2012).",
-    image: { id: "cheesecake-dessert" },
   },
   {
     id: 8,
@@ -230,9 +214,5 @@ export const menuData: Course[] = [
       "ODS 12: Consumo responsable, promoviendo la elaboración artesanal.",
     ],
     academicSustenance: "La elaboración de licores artesanales mediante maceración es una práctica histórica que permite extraer compuestos aromáticos y medicinales de plantas, siendo una forma de conservación y valorización de recursos botánicos (Jackson, 2008).",
-    image: { id: "rose-liqueur" },
   },
-].map(course => ({
-  ...course,
-  image: getImage(course.image.id)
-}));
+];

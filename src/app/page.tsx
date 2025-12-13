@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { menuData } from "@/lib/data";
 import type { Course } from "@/lib/types";
 import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, ChefHat } from "lucide-react";
@@ -15,15 +14,8 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 const CourseCard = ({ course }: { course: Course }) => (
   <Dialog>
     <div className="bg-card rounded-xl shadow-sm overflow-hidden border border-border/80 flex flex-col">
-      <div className="relative w-full h-56">
-        <Image 
-          src={course.image.src} 
-          alt={course.image.alt} 
-          fill 
-          className="object-cover"
-          data-ai-hint={course.image.aiHint}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
+      <div className="relative w-full h-40 bg-muted/50 flex items-center justify-center">
+        <ChefHat className="w-16 h-16 text-primary/20" strokeWidth={1} />
       </div>
       <div className="p-6 flex-grow flex flex-col">
         <p className="text-xs font-bold text-accent uppercase tracking-widest">{course.courseNumber}</p>
