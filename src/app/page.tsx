@@ -52,14 +52,14 @@ export default function OchoTiemposPage() {
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
       <header className="py-12 md:py-16">
         <div className="container mx-auto text-center px-4">
-          <p className="font-headline text-4xl md:text-5xl text-primary tracking-tighter">Ocho Tiempos</p>
+          <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl text-primary/90 leading-tight">Aplicación de harina de Tenebrio Molitor en un menú de 8 tiempos</h1>
+          <p className="mt-4 font-headline text-2xl md:text-3xl text-primary tracking-tighter">Ocho Tiempos</p>
           <p className="mt-1 text-lg md:text-xl text-muted-foreground">Un Menú Conceptual</p>
         </div>
       </header>
       
       <main className="flex-grow container mx-auto px-4 pb-12 md:pb-24">
         <div className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
-            <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl text-primary/90 leading-tight">Aplicación de harina de Tenebrio Molitor en un menú de 8 tiempos</h1>
             <p className="mt-4 text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 Una travesía culinaria que narra las etapas de la vida universitaria, fusionando tradición e innovación sostenible. Cada plato, una historia. Cada bocado, una lección aprendida.
             </p>
