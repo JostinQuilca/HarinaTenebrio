@@ -35,22 +35,7 @@ export function ImageGalleryCarousel({
     Autoplay({ delay, stopOnInteraction: pauseOnInteraction })
   );
 
-  const [selectedIndex, setSelectedIndex] = React.useState(0);
   const [emblaApi, setEmblaApi] = React.useState<EmblaCarouselType | null>(null);
-
-  const onSelect = React.useCallback(() => {
-    if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
-
-  React.useEffect(() => {
-    if (!emblaApi) return;
-    emblaApi.on("select", onSelect);
-    onSelect();
-    return () => {
-      emblaApi.off("select", onSelect);
-    };
-  }, [emblaApi, onSelect]);
 
   if (!images?.length) return null;
 
@@ -64,18 +49,11 @@ export function ImageGalleryCarousel({
       opts={{ loop: true }}
       aria-roledescription="carousel"
     >
-      <CarouselContent className="relative aspect-video">
+      <CarouselContent>
         {images.map((image, index) => (
-          <CarouselItem
-            key={image.id}
-            aria-hidden={index !== selectedIndex}
-            className={cn(
-              "absolute inset-0 transition-opacity duration-700 ease-in-out",
-              index === selectedIndex ? "opacity-100" : "opacity-0"
-            )}
-          >
+          <CarouselItem key={image.id}>
             <div className="p-1 h-full">
-              <div className="relative h-full overflow-hidden rounded-lg bg-muted/20 p-2 shadow-sm">
+              <div className="relative aspect-video overflow-hidden rounded-lg bg-muted/20 p-2 shadow-sm">
                 <Image
                   src={image.imageUrl}
                   alt={image.description}
