@@ -74,22 +74,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-@layer components {
-  .embla__fade {
-    position: relative;
-    height: auto;
-  }
-  .embla__fade-item {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-  }
-  .embla__fade-item.is-selected {
-    opacity: 1;
-  }
-}
