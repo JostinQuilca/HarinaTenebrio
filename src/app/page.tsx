@@ -1,6 +1,6 @@
 import { menuData } from "@/lib/data";
 import type { Course } from "@/lib/types";
-import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Home, HeartHandshake, Mic, User, Sprout, CakeSlice, GitCompareArrows, GlassWater } from "lucide-react";
+import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCream2, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -13,13 +13,13 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 const CourseCard = ({ course }: { course: Course }) => {
   const icons: { [key: number]: React.ReactNode } = {
-    1: <Home className="w-16 h-16 text-primary/20" strokeWidth={1} />,
-    2: <HeartHandshake className="w-16 h-16 text-primary/20" strokeWidth={1} />,
-    3: <Mic className="w-16 h-16 text-primary/20" strokeWidth={1} />,
-    4: <User className="w-16 h-16 text-primary/20" strokeWidth={1} />,
-    5: <Sprout className="w-16 h-16 text-primary/20" strokeWidth={1} />,
+    1: <Wheat className="w-16 h-16 text-primary/20" strokeWidth={1} />,
+    2: <IceCream2 className="w-16 h-16 text-primary/20" strokeWidth={1} />,
+    3: <CookingPot className="w-16 h-16 text-primary/20" strokeWidth={1} />,
+    4: <Shell className="w-16 h-16 text-primary/20" strokeWidth={1} />,
+    5: <Bean className="w-16 h-16 text-primary/20" strokeWidth={1} />,
     6: <CakeSlice className="w-16 h-16 text-primary/20" strokeWidth={1} />,
-    7: <GitCompareArrows className="w-16 h-16 text-primary/20" strokeWidth={1} />,
+    7: <Dessert className="w-16 h-16 text-primary/20" strokeWidth={1} />,
     8: <GlassWater className="w-16 h-16 text-primary/20" strokeWidth={1} />,
   };
 
@@ -27,7 +27,7 @@ const CourseCard = ({ course }: { course: Course }) => {
     <Dialog>
       <div className="bg-card rounded-xl shadow-sm overflow-hidden border border-border/80 flex flex-col">
         <div className="relative w-full h-40 bg-muted/50 flex items-center justify-center">
-          {icons[course.id] || <User className="w-16 h-16 text-primary/20" strokeWidth={1} />}
+          {icons[course.id] || <Dessert className="w-16 h-16 text-primary/20" strokeWidth={1} />}
         </div>
         <div className="p-6 flex-grow flex flex-col">
           <p className="text-xs font-bold text-accent uppercase tracking-widest">{course.courseNumber}</p>
