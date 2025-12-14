@@ -1,6 +1,6 @@
 import { menuData } from "@/lib/data";
 import type { Course } from "@/lib/types";
-import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCream2, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater } from "lucide-react";
+import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCream2, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, Sprout } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -120,7 +120,7 @@ export default function OchoTiemposPage() {
       
       <footer className="py-10 mt-16 bg-muted/50 border-t border-border/60">
         <div className="container mx-auto text-center text-sm text-muted-foreground">
-          <p className="font-headline text-lg text-primary mb-2">Ocho Tiempos</p>
+          <p className="font-headline text-lg text-primary mb-2">Un Menú Conceptual</p>
           <p>&copy; {new Date().getFullYear()} Un concepto gastronómico innovador.</p>
         </div>
       </footer>
