@@ -1,6 +1,14 @@
 import { menuData, references } from "@/lib/data";
 import type { Course } from "@/lib/types";
 import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCream2, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, MoveRight, Users, University, Droplets } from "lucide-react";
+import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 import {
   Dialog,
   DialogContent,
@@ -9,6 +17,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const CourseCard = ({ course }: { course: Course }) => {
   const icons: { [key: number]: React.ReactNode } = {
@@ -25,7 +34,7 @@ const CourseCard = ({ course }: { course: Course }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="bg-transparent rounded-lg overflow-hidden group cursor-pointer text-left flex flex-col h-full">
+        <div className="bg-card rounded-lg overflow-hidden group cursor-pointer text-left flex flex-col h-full shadow-sm border border-border/50 hover:border-accent/50 hover:shadow-md transition-all duration-300">
           <div className="p-6 flex flex-col items-start gap-4 flex-grow">
             <div className="flex items-center gap-6">
               {icons[course.id] || <Dessert className="w-12 h-12 text-accent" strokeWidth={1} />}
@@ -118,6 +127,8 @@ const CourseCard = ({ course }: { course: Course }) => {
 };
 
 export default function OchoTiemposPage() {
+  const tenebrioLifecycleImages = PlaceHolderImages.filter(img => img.id.startsWith('tenebrio'));
+
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
       <header className="py-24 md:py-32">
@@ -136,6 +147,50 @@ export default function OchoTiemposPage() {
                 Una travesía que narra las etapas de la vida universitaria, fusionando tradición e innovación sostenible. Cada plato es una historia; cada bocado, una lección. Descubra cómo la harina de Tenebrio molitor redefine la gastronomía.
             </p>
         </div>
+
+        <section className="mb-16 md:mb-24">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+              <h2 className="font-headline text-3xl text-primary">El Ciclo de Vida del Tenebrio Molitor</h2>
+              <div className="flex justify-center my-4">
+                  <div className="w-20 h-px bg-accent"></div>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Desde el huevo hasta el escarabajo adulto, el Tenebrio molitor ofrece una fuente de proteína sostenible en cada una de sus etapas clave.
+              </p>
+          </div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-4xl mx-auto"
+          >
+            <CarouselContent>
+              {tenebrioLifecycleImages.map((image) => (
+                <CarouselItem key={image.id} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1">
+                    <div className="rounded-lg overflow-hidden aspect-w-1 aspect-h-1 bg-muted">
+                       <Image
+                          src={image.imageUrl}
+                          alt={image.description}
+                          width={600}
+                          height={600}
+                          className="object-cover w-full h-full"
+                          data-ai-hint={image.imageHint}
+                        />
+                    </div>
+                    <div className="pt-4 text-center">
+                      <h4 className="font-headline text-lg text-primary">{image.description.split(',')[0]}</h4>
+                      <p className="text-xs text-muted-foreground mt-1">{image.description.split(',')[1]}</p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </section>
         
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
           {menuData.map((course) => (
@@ -144,7 +199,7 @@ export default function OchoTiemposPage() {
         </div>
       </main>
       
-      <footer className="py-10 mt-16 bg-transparent">
+      <footer className="py-10 mt-16 bg-muted/30">
         <div className="container mx-auto text-center text-sm text-muted-foreground">
           <p className="font-bold mb-4">Referencias (APA)</p>
           <ul className="space-y-1 text-xs text-muted-foreground/80">
@@ -156,3 +211,5 @@ export default function OchoTiemposPage() {
     </div>
   );
 }
+
+    
