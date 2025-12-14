@@ -5,12 +5,116 @@
       "description": "Diagram showing the life cycle of Tenebrio molitor: eggs, larva, pupa, and adult beetle.",
       "imageUrl": "https://protiberia.com/wp-content/uploads/2022/12/Tenebrio-Molitor-Illustration.svg",
       "imageHint": "insect lifecycle"
+    }
+  ],
+  "traceabilityGallery": [
+    {
+      "id": "traceability-1",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 1",
+      "imageUrl": "https://i.ibb.co/C5H1MtNh/1.jpg",
+      "imageHint": "insect farm"
     },
     {
-      "id": "traceability-main",
-      "description": "Innovation in food production.",
-      "imageUrl": "https://i.ibb.co/xS3W8q8v/16.jpg",
+      "id": "traceability-2",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 2",
+      "imageUrl": "https://i.ibb.co/XfwVxyrP/2.jpg",
+      "imageHint": "insect breeding"
+    },
+    {
+      "id": "traceability-3",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 3",
+      "imageUrl": "https://i.ibb.co/4n8Fnhdf/3.jpg",
+      "imageHint": "tenebrio molitor"
+    },
+    {
+      "id": "traceability-4",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 4",
+      "imageUrl": "https://i.ibb.co/2162cPJT/4.jpg",
+      "imageHint": "insect larvae"
+    },
+    {
+      "id": "traceability-5",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 5",
+      "imageUrl": "https://i.ibb.co/604mmdVX/5.jpg",
+      "imageHint": "mealworms"
+    },
+    {
+      "id": "traceability-6",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 6",
+      "imageUrl": "https://i.ibb.co/wFfCtpzN/6.jpg",
+      "imageHint": "sustainable protein"
+    },
+    {
+      "id": "traceability-7",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 7",
+      "imageUrl": "https://i.ibb.co/ynB6trB6/7.jpg",
+      "imageHint": "insect processing"
+    },
+    {
+      "id": "traceability-8",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 8",
+      "imageUrl": "https://i.ibb.co/VFY7skz/8.jpg",
+      "imageHint": "food production"
+    },
+    {
+      "id": "traceability-9",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 9",
+      "imageUrl": "https://i.ibb.co/1tp5QD3h/9.jpg",
+      "imageHint": "quality control"
+    },
+    {
+      "id": "traceability-10",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 10",
+      "imageUrl": "https://i.ibb.co/c75sby1/10.jpg",
+      "imageHint": "edible insects"
+    },
+    {
+      "id": "traceability-11",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 11",
+      "imageUrl": "https://i.ibb.co/BHDbxT0G/11.jpg",
+      "imageHint": "insect flour"
+    },
+    {
+      "id": "traceability-12",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 12",
+      "imageUrl": "https://i.ibb.co/zTx2CJr9/12.jpg",
       "imageHint": "food innovation"
+    },
+    {
+      "id": "traceability-13",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 13",
+      "imageUrl": "https://i.ibb.co/hF2FR8D3/13.jpg",
+      "imageHint": "culinary preparation"
+    },
+    {
+      "id": "traceability-14",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 14",
+      "imageUrl": "https://i.ibb.co/0R3DTWnZ/14.jpg",
+      "imageHint": "gourmet dish"
+    },
+    {
+      "id": "traceability-15",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 15",
+      "imageUrl": "https://i.ibb.co/YFS5bhHg/15.jpg",
+      "imageHint": "final product"
+    },
+    {
+      "id": "traceability-16",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 16",
+      "imageUrl": "https://i.ibb.co/xS3W8q8v/16.jpg",
+      "imageHint": "food presentation"
+    },
+    {
+      "id": "traceability-17",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 17",
+      "imageUrl": "https://i.ibb.co/cXR6qTRS/17.jpg",
+      "imageHint": "kitchen process"
+    },
+    {
+      "id": "traceability-18",
+      "description": "Trazabilidad del Tenebrio Molitor - Imagen 18",
+      "imageUrl": "https://i.ibb.co/xt06hrqJ/18.jpg",
+      "imageHint": "cooking ingredients"
     }
   ]
 }
