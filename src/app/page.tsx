@@ -1,6 +1,6 @@
 import { menuData, references } from "@/lib/data";
 import type { Course } from "@/lib/types";
-import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCreamBowl, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, MoveRight, Users, University, Droplets, ChevronDown, Sprout } from "lucide-react";
+import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCreamBowl, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, MoveRight, Users, University, Droplets, Sprout } from "lucide-react";
 import Image from "next/image";
 import {
   Dialog,
@@ -12,14 +12,7 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-
+import { ImageGalleryCarousel } from "@/components/ui/image-gallery-carousel";
 
 const CourseCard = ({ course }: { course: Course }) => {
   const icons: { [key: number]: React.ReactNode } = {
@@ -130,8 +123,7 @@ const CourseCard = ({ course }: { course: Course }) => {
 
 export default function OchoTiemposPage() {
   const tenebrioLifecycleImage = PlaceHolderImages.find(img => img.id === 'tenebrio-lifecycle-diagram');
-  const traceabilityImages = PlaceHolderImages.filter(img => img.id.startsWith('traceability-'));
-
+  const traceabilityGalleryImages = PlaceHolderImages.filter(img => img.id.startsWith('traceability-gallery-'));
 
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
@@ -155,16 +147,11 @@ export default function OchoTiemposPage() {
         <section className="mb-16 md:mb-24 max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1" className="border-b-0">
-              <AccordionTrigger className="hover:no-underline">
-                <div className="text-center w-full">
+              <AccordionTrigger className="hover:no-underline text-center w-full flex-col gap-4">
                   <h2 className="font-headline text-3xl text-primary">El Ciclo de Vida del Tenebrio Molitor</h2>
-                  <div className="flex justify-center my-4">
-                      <div className="w-20 h-px bg-accent"></div>
-                  </div>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
+                  <p className="text-muted-foreground leading-relaxed text-sm font-normal">
                     Desde el huevo hasta el escarabajo adulto, el Tenebrio molitor ofrece una fuente de proteína sostenible en cada una de sus etapas clave. Haz clic para ver el diagrama.
                   </p>
-                </div>
               </AccordionTrigger>
               <AccordionContent>
                 {tenebrioLifecycleImage && (
@@ -196,29 +183,8 @@ export default function OchoTiemposPage() {
               Nuestro Tenebrio molitor se cría en un entorno controlado, garantizando un producto de alta calidad y un impacto ambiental mínimo. La trazabilidad completa desde la cría hasta la cosecha asegura un ingrediente puro y sostenible.
             </p>
           </div>
-          {traceabilityImages.length > 0 && (
-            <Carousel className="w-full max-w-2xl mx-auto">
-              <CarouselContent>
-                {traceabilityImages.map((image) => (
-                  <CarouselItem key={image.id}>
-                    <div className="p-1">
-                      <div className="relative aspect-video rounded-lg overflow-hidden bg-muted/20 p-2 shadow-sm">
-                        <Image
-                          src={image.imageUrl}
-                          alt={image.description}
-                          fill
-                          className="object-cover w-full h-full rounded"
-                          data-ai-hint={image.imageHint}
-                        />
-                      </div>
-                      <p className="text-center text-xs text-muted-foreground mt-2">{image.description}</p>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="ml-12" />
-              <CarouselNext className="mr-12" />
-            </Carousel>
+          {traceabilityGalleryImages.length > 0 && (
+            <ImageGalleryCarousel images={traceabilityGalleryImages} />
           )}
         </section>
         
