@@ -19,7 +19,7 @@ interface ImageGalleryCarouselProps {
 
 export function ImageGalleryCarousel({ images }: ImageGalleryCarouselProps) {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 3000, stopOnInteraction: true })
   );
 
   return (
@@ -32,9 +32,9 @@ export function ImageGalleryCarousel({ images }: ImageGalleryCarouselProps) {
         loop: true,
       }}
     >
-      <CarouselContent>
+      <CarouselContent className="embla__fade">
         {images.map((image) => (
-          <CarouselItem key={image.id}>
+          <CarouselItem key={image.id} className="embla__fade-item">
             <div className="p-1">
               <div className="relative aspect-video overflow-hidden rounded-lg bg-muted/20 p-2 shadow-sm">
                 <Image
