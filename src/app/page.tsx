@@ -153,7 +153,7 @@ export default function OchoTiemposPage() {
           </div>
           {tenebrioLifecycleImage && (
             <div className="w-full max-w-3xl mx-auto">
-              <div className="rounded-lg overflow-hidden aspect-w-16 aspect-h-9 bg-muted">
+              <div className="rounded-lg overflow-hidden aspect-w-16 aspect-h-9 bg-muted/20 p-4">
                   <Image
                     src={tenebrioLifecycleImage.imageUrl}
                     alt={tenebrioLifecycleImage.description}
@@ -186,5 +186,3 @@ export default function OchoTiemposPage() {
     </div>
   );
 }
-
-    

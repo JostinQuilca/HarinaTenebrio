@@ -30,7 +30,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'www.protiberia.com',
+        hostname: 'protiberia.com',
         port: '',
         pathname: '/**',
       }
