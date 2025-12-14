@@ -4,9 +4,9 @@ export const menuData: Course[] = [
   {
     id: 1,
     courseNumber: "Primer Tiempo",
-    title: "AZAHAR DEL HORNO",
+    title: "PRIMER HOGAR",
     description: "Focaccia de arándanos y jamón serrano con harina de Tenebrio molitor, acompañada de mantequilla saborizada y queso crema.",
-    storytelling: "Este primer tiempo simboliza el inicio de la vida universitaria, el momento en que el estudiante abandona lo conocido para adentrarse en un nuevo entorno académico. El azahar, flor asociada al comienzo de los ciclos, representa el primer contacto con el conocimiento formal, mientras que la focaccia remite a lo familiar y reconfortante del hogar que se deja atrás.",
+    storytelling: "Este primer plato representa el inicio de todo. Nuestra amistad comenzó incluso antes de ingresar oficialmente a la universidad, durante el curso de nivelación, cuando el contacto era únicamente virtual. Aun así, se generó una conexión inmediata. El primer día presencial, sin planearlo demasiado, nos sentamos juntos y desde ese momento hemos compartido la mayoría de los procesos académicos y personales. Como el pan, esta amistad ha sido base y sostén. Ha estado presente en proyectos, discusiones, desacuerdos y reconciliaciones, pero nunca se ha roto. Los arándanos simbolizan los momentos de alegría y risa constante; el jamón serrano representa el paso del tiempo y la madurez que se va construyendo con los años. Primer Hogar es ese espacio seguro donde todo comenzó y al que siempre se puede regresar.",
     characteristics: [
       "Preparación panaria contemporánea y sostenible.",
       "Combinación de sabores dulces y salados.",
@@ -32,9 +32,9 @@ export const menuData: Course[] = [
   {
     id: 2,
     courseNumber: "Segundo Tiempo",
-    title: "FLOR DE MANGO SILVESTRE",
+    title: "VÍNCULO DULCE",
     description: "Sorbet de mango con espuma de uvilla, gel de mora y crumble de cacao con harina de Tenebrio molitor.",
-    storytelling: "Representa la etapa de exploración y adaptación en los primeros semestres. La frescura del sorbet simboliza la curiosidad intelectual y la experimentación constante, mientras que el crumble, enriquecido con Tenebrio, aporta una estructura sólida y nutritiva, reflejando el inicio del pensamiento académico organizado.",
+    storytelling: "Este plato representa a Norah y la forma delicada en la que se fue construyendo nuestra amistad con ella. Al inicio era una persona reservada, tímida y silenciosa, que observaba más de lo que hablaba. Con el tiempo, fue encontrando confianza y seguridad, tanto dentro como fuera del grupo. El sorbet, fresco y equilibrado, refleja esa suavidad en su forma de sentir. Las capas del plato simbolizan el proceso gradual de apertura emocional y la profundidad de un afecto que no siempre se expresa con palabras. Vínculo Dulce representa una amistad sincera, justa y constante, que se mantiene incluso en los momentos de distancia.",
     characteristics: [
       "Preparación fría y refrescante.",
       "Contraste de texturas y acidez.",
@@ -59,9 +59,9 @@ export const menuData: Course[] = [
   {
     id: 3,
     courseNumber: "Tercer Tiempo",
-    title: "CRISANTEMO UMAMI",
+    title: "SUSURRO SUAVE",
     description: "Gyoza de cerdo y verduras con masa enriquecida con harina de Tenebrio molitor, servidas con salsa de soja y ajonjolí.",
-    storytelling: "Simboliza la consolidación académica, cuando el estudiante comienza a dominar conceptos complejos. La gyoza, con su técnica precisa de plegado, representa la estructura del pensamiento analítico, y la masa con Tenebrio añade una capa de innovación y sostenibilidad a la tradición.",
+    storytelling: "Alan es la última incorporación al grupo. Nos conocimos mejor cocinando juntos en la cocina, y aunque al inicio el proceso de integración fue lento, con el tiempo empezó a encajar de manera natural. Su personalidad es alegre, genuina y fuerte. La gyoza, cerrada por fuera y llena de sabor en su interior, simboliza esa forma de ser que se descubre poco a poco. Susurro Suave representa una amistad que no irrumpe, sino que se construye con paciencia, aceptación y convivencia.",
     characteristics: [
       "Cocina asiática sostenible.",
       "Masa con mayor aporte de nutrientes.",
@@ -86,9 +86,9 @@ export const menuData: Course[] = [
   {
     id: 4,
     courseNumber: "Cuarto Tiempo",
-    title: "MAGNOLIA DE MESA",
+    title: "PULSO SERENO",
     description: "Ravioles caseros de pollo con masa fresca de harina de Tenebrio molitor, bañados en una delicada salsa aurora y aceite de cebollín.",
-    storytelling: "Representa la vida universitaria colaborativa. Así como cada raviol encierra un relleno, los estudiantes guardan conocimientos que, al unirse en trabajos grupales (la salsa que los une), crean un resultado más completo. La masa innovadora simboliza la sinergia entre tradición y nuevas ideas.",
+    storytelling: "Este plato me representa a mí dentro del grupo. Soy una persona extrovertida y alegre, pero también reflexiva, con un carácter firme y una tendencia natural a organizar, escuchar y aconsejar. En muchas ocasiones, mis amigos acuden a mí en busca de apoyo o claridad. Los ravioles reflejan estructura y orden; el higo aporta dulzura y profundidad. Pulso Sereno simboliza esa energía constante que mantiene el equilibrio del grupo, una presencia que acompaña y sostiene sin imponerse.",
     characteristics: [
       "Pasta fresca artesanal y proteica.",
       "Salsa clásica de la cocina francesa.",
@@ -113,9 +113,9 @@ export const menuData: Course[] = [
   {
     id: 5,
     courseNumber: "Quinto Tiempo",
-    title: "RAÍZ DE DALIA",
+    title: "VERDE NOBLE",
     description: "Croqueta de yuca rellena de queso, empanizada en panko y harina de Tenebrio molitor, acompañada de salsa de aguacate y hebras de pollo.",
-    storytelling: "Simboliza la construcción de la identidad profesional. La yuca, una raíz profunda, representa las bases culturales del estudiante. El empanizado con Tenebrio es la capa de innovación y resiliencia que adquiere en la universidad, una 'coraza' que lo prepara para el mundo profesional.",
+    storytelling: "Esta amistad nació entre proyectos académicos y situaciones espontáneas, como aquel trabajo de inglés que terminó con risas, tierra regada y pequeños cactus en macetas. Andrés es una persona tímida, afectuosa y genuina, que quiere de forma sincera. Los ingredientes del plato evocan la tierra, lo simple y lo honesto. Verde Noble representa un cariño limpio, resistente y auténtico, que crece con el tiempo.",
     characteristics: [
       "Fritura profunda y controlada.",
       "Inspiración en la cocina latinoamericana.",
@@ -140,9 +140,9 @@ export const menuData: Course[] = [
   {
     id: 6,
     courseNumber: "Sexto Tiempo",
-    title: "PEONÍA DULCE",
+    title: "ENCUENTRO CÁLIDO",
     description: "Tarta Fraisier con bizcocho genovés de harina de Tenebrio molitor, crema muselina a la vainilla, fresas frescas y gel de maracuyá.",
-    storytelling: "Representa los logros académicos. La complejidad técnica de la tarta Fraisier simboliza el esfuerzo y la dedicación. El bizcocho, enriquecido y con un matiz de sabor único, es el valor añadido que la formación universitaria aporta al perfil del estudiante.",
+    storytelling: "Vanessa no formó parte del grupo desde el inicio, pero cuando llegó, encajó de manera natural. Su integración fue rápida, y con poco tiempo se construyó una cercanía real. Este postre, compuesto por capas, simboliza las relaciones que se forman poco a poco. Encuentro Cálido representa el momento en el que alguien deja de estar solo y encuentra un espacio compartido.",
     characteristics: [
       "Pastelería clásica francesa reinventada.",
       "Bizcocho con un perfil nutricional mejorado.",
@@ -166,9 +166,9 @@ export const menuData: Course[] = [
   {
     id: 7,
     courseNumber: "Séptimo Tiempo",
-    title: "ROSA PERSISTENTE",
+    title: "CONTRASTE DULCE",
     description: "Cheesecake invertido con base de galleta de Tenebrio molitor, compota de frutos rojos y cobertura de chocolate rosado.",
-    storytelling: "Simboliza el cierre del ciclo académico. La inversión del cheesecake representa una nueva perspectiva. La base, hecha con harina de insecto, es el fundamento sólido e innovador sobre el cual el recién graduado construirá su futuro, dejando una impresión duradera.",
+    storytelling: "Este plato representa a Eric. Su humor distinto y su forma particular de ver el mundo encajaron con lo poco convencional de nuestro grupo, y terminaron enriqueciendo la dinámica del grupo. El cheesecake invertido simboliza esa ruptura de lo tradicional. Contraste Dulce celebra la diferencia como un valor que fortalece la amistad.",
     characteristics: [
       "Postre de vanguardia y sostenible.",
       "Presentación visual innovadora.",
@@ -192,9 +192,9 @@ export const menuData: Course[] = [
   {
     id: 8,
     courseNumber: "Octavo Tiempo",
-    title: "VIOLETA FINAL",
+    title: "BRUMA ROSA",
     description: "Licor cremoso artesanal de pétalos de rosa, acompañado de una rodaja de naranja deshidratada para perfumar.",
-    storytelling: "Representa la graduación y la transición al mundo profesional. Es el brindis final, un momento de celebración y reflexión. Su sabor floral y persistente es como el recuerdo de la experiencia universitaria: algo que perdura y acompaña en el nuevo camino que se emprende.",
+    storytelling: "Este último plato representa a Thalía y cierra el menú. Su amistad se construyó con el tiempo, de forma silenciosa y constante. Es una presencia suave, que acompaña y permanece. El licor, delicado y persistente, simboliza los recuerdos que se quedan. Bruma Rosa representa la memoria compartida, el cierre emocional del recorrido y la permanencia de la amistad.",
     characteristics: [
       "Bebida digestiva y aromática.",
       "Cierre elegante y sensorial del menú.",
