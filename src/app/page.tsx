@@ -1,6 +1,6 @@
 import { menuData, references } from "@/lib/data";
 import type { Course } from "@/lib/types";
-import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCreamBowl, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, MoveRight, Users, University, Droplets, Sprout, Star } from "lucide-react";
+import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCreamBowl, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, MoveRight, Users, University, Droplets, Sprout, Star, Recycle, GalleryHorizontal } from "lucide-react";
 import Image from "next/image";
 import {
   Dialog,
@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { PlaceHolderImages, traceabilityGallery } from "@/lib/placeholder-images";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ImageGalleryCarousel } from "@/components/ui/image-gallery-carousel";
 
 const CourseCard = ({ course }: { course: Course }) => {
@@ -114,6 +113,41 @@ const CourseCard = ({ course }: { course: Course }) => {
   );
 };
 
+const InfoCard = ({ icon, title, description, children }: { icon: React.ReactNode, title: string, description: string, children: React.ReactNode }) => {
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <div className="bg-card rounded-xl overflow-hidden group cursor-pointer text-left flex flex-col h-full shadow-sm border hover:border-accent/80 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+          <div className="p-6 flex flex-col items-start gap-4 flex-grow">
+            <div className="flex items-center gap-5">
+              {icon}
+              <div>
+                <h3 className="font-headline text-2xl lg:text-3xl text-primary mt-1">{title}</h3>
+              </div>
+            </div>
+            <p className="mt-2 text-sm text-muted-foreground text-pretty flex-grow leading-relaxed">{description}</p>
+          </div>
+          <div className="p-6 pt-0 mt-auto">
+            <p className="flex items-center gap-2 text-sm font-semibold text-accent uppercase tracking-widest group-hover:underline">
+              Ver más
+              <MoveRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </p>
+          </div>
+        </div>
+      </DialogTrigger>
+      <DialogContent className="max-w-4xl bg-background">
+        <DialogHeader>
+          <DialogTitle className="font-headline text-3xl md:text-4xl text-primary">{title}</DialogTitle>
+        </DialogHeader>
+        <div className="py-4">
+          {children}
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+};
+
+
 export default function OchoTiemposPage() {
   const tenebrioLifecycleImage = PlaceHolderImages.find(img => img.id === 'tenebrio-lifecycle-diagram');
   
@@ -135,53 +169,42 @@ export default function OchoTiemposPage() {
                 La incorporación de ingredientes no convencionales en la cocina profesional representa una oportunidad para replantear los modelos tradicionales de consumo y producción.
             </p>
         </div>
-
-        <section className="mb-16 md:mb-24 max-w-4xl mx-auto bg-card border rounded-xl shadow-sm p-6 md:p-8">
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="item-1" className="border-b-0">
-              <AccordionTrigger className="hover:no-underline text-center w-full flex-col gap-4">
-                  <h2 className="font-headline text-3xl text-primary">El Ciclo de Vida del Tenebrio Molitor</h2>
-                  <p className="text-muted-foreground leading-relaxed text-sm font-normal max-w-2xl mx-auto">
-                    Desde el huevo hasta el escarabajo adulto, el Tenebrio molitor ofrece una fuente de proteína sostenible en cada una de sus etapas clave. Haz clic para ver el diagrama.
-                  </p>
-              </AccordionTrigger>
-              <AccordionContent>
-                {tenebrioLifecycleImage && (
-                  <div className="w-full pt-8">
-                    <div className="rounded-lg overflow-hidden bg-secondary/70 p-4">
-                        <Image
-                          src={tenebrioLifecycleImage.imageUrl}
-                          alt={tenebrioLifecycleImage.description}
-                          width={1200}
-                          height={675}
-                          className="object-contain w-full h-full rounded-md"
-                          data-ai-hint={tenebrioLifecycleImage.imageHint}
-                        />
-                    </div>
-                  </div>
-                )}
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </section>
-
-        <section className="mb-16 md:mb-24">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="font-headline text-3xl text-primary">Trazabilidad y Sostenibilidad</h2>
-            <div className="flex justify-center my-4">
-                <div className="w-20 h-px bg-accent"></div>
-            </div>
-            <p className="text-muted-foreground leading-relaxed text-sm mb-8 max-w-2xl mx-auto">
-              Nuestro Tenebrio molitor se cría en un entorno controlado, garantizando un producto de alta calidad y un impacto ambiental mínimo. La trazabilidad completa desde la cría hasta la cosecha asegura un ingrediente puro y sostenible.
-            </p>
-          </div>
-          <ImageGalleryCarousel images={traceabilityGallery} />
-        </section>
         
         <div className="grid md:grid-cols-2 gap-8">
           {menuData.map((course) => (
             <CourseCard key={course.id} course={course} />
           ))}
+        </div>
+
+        <div className="mt-16 md:mt-24 grid md:grid-cols-2 gap-8">
+          <InfoCard
+            icon={<Recycle className="w-10 h-10 text-accent" strokeWidth={1.5} />}
+            title="El Ciclo de Vida del Tenebrio"
+            description="Desde el huevo hasta el escarabajo adulto, el Tenebrio molitor ofrece una fuente de proteína sostenible en cada una de sus etapas clave."
+          >
+            {tenebrioLifecycleImage && (
+              <div className="w-full">
+                <div className="rounded-lg overflow-hidden bg-secondary/70 p-4">
+                    <Image
+                      src={tenebrioLifecycleImage.imageUrl}
+                      alt={tenebrioLifecycleImage.description}
+                      width={1200}
+                      height={675}
+                      className="object-contain w-full h-full rounded-md"
+                      data-ai-hint={tenebrioLifecycleImage.imageHint}
+                    />
+                </div>
+              </div>
+            )}
+          </InfoCard>
+
+          <InfoCard
+            icon={<GalleryHorizontal className="w-10 h-10 text-accent" strokeWidth={1.5} />}
+            title="Trazabilidad y Sostenibilidad"
+            description="Nuestro Tenebrio molitor se cría en un entorno controlado, garantizando un producto de alta calidad y un impacto ambiental mínimo."
+          >
+            <ImageGalleryCarousel images={traceabilityGallery} />
+          </InfoCard>
         </div>
       </main>
       
