@@ -6,8 +6,8 @@ export const menuData: Course[] = [
     courseNumber: "Primer Tiempo",
     title: "PRIMER HOGAR",
     description: "Focaccia de arándanos y jamón serrano elaborada con sustitución del 25 % de harina de trigo por harina de Tenebrio molitor, acompañada de mantequilla saborizada y queso crema.",
-    storytelling: "Este primer plato representa el inicio de todo. Nuestra amistad comenzó incluso antes de ingresar oficialmente a la universidad, durante el curso de nivelación, cuando el contacto era únicamente virtual. Aun así, se generó una conexión inmediata. El primer día presencial, sin planearlo demasiado, nos sentamos juntos y desde ese momento hemos compartido la mayoría de los procesos académicos y personales. Como el pan, esta amistad ha sido base y sostén. Ha estado presente en proyectos, discusiones, desacuerdos y reconciliaciones, pero nunca se ha roto. Los arándanos simbolizan los momentos de alegría y risa constante; el jamón serrano representa el paso del tiempo y la madurez que se va construyendo con los años. Primer Hogar es ese espacio seguro donde todo comenzó y al que siempre se puede regresar.",
-    universityStorytelling: "Este primer tiempo simboliza el inicio de la vida universitaria, el momento en que el estudiante abandona lo conocido para adentrarse en un nuevo entorno académico. El azahar, flor asociada al comienzo de los ciclos, representa el primer contacto con el conocimiento formal, mientras que la focaccia remite a lo familiar. La harina de Tenebrio molitor introduce la innovación y el pensamiento crítico, elementos fundamentales del proceso formativo universitario.",
+    storytellingFriendship: "Este primer plato representa el inicio de todo. Nuestra amistad comenzó incluso antes de ingresar oficialmente a la universidad, durante el curso de nivelación, cuando el contacto era únicamente virtual. Aun así, se generó una conexión inmediata. El primer día presencial, sin planearlo demasiado, nos sentamos juntos y desde ese momento hemos compartido la mayoría de los procesos académicos y personales. Como el pan, esta amistad ha sido base y sostén. Ha estado presente en proyectos, discusiones, desacuerdos y reconciliaciones, pero nunca se ha roto. Los arándanos simbolizan los momentos de alegría y risa constante; el jamón serrano representa el paso del tiempo y la madurez que se va construyendo con los años. Primer Hogar es ese espacio seguro donde todo comenzó y al que siempre se puede regresar.",
+    storytellingUniversity: "Este primer tiempo simboliza el inicio de la vida universitaria, el momento en que el estudiante abandona lo conocido para adentrarse en un nuevo entorno académico. El azahar, flor asociada al comienzo de los ciclos, representa el primer contacto con el conocimiento formal, mientras que la focaccia remite a lo familiar. La harina de Tenebrio molitor introduce la innovación y el pensamiento crítico, elementos fundamentales del proceso formativo universitario.",
     characteristics: [
       "Preparación panaria contemporánea.",
       "Integración de ingredientes alternativos.",
@@ -35,8 +35,8 @@ export const menuData: Course[] = [
     courseNumber: "Segundo Tiempo",
     title: "VÍNCULO DULCE",
     description: "Sorbet de mango con espuma de uvilla, gel de mora y crumble de cacao elaborado con 25 % de harina de Tenebrio molitor.",
-    storytelling: "Este plato representa a Norah y la forma delicada en la que se fue construyendo nuestra amistad con ella. Al inicio era una persona reservada, tímida y silenciosa, que observaba más de lo que hablaba. Con el tiempo, fue encontrando confianza y seguridad, tanto dentro como fuera del grupo. El sorbet, fresco y equilibrado, refleja esa suavidad en su forma de sentir. Las capas del plato simbolizan el proceso gradual de apertura emocional y la profundidad de un afecto que no siempre se expresa con palabras. Vínculo Dulce representa una amistad sincera, justa y constante, que se mantiene incluso en los momentos de distancia.",
-    universityStorytelling: "",
+    storytellingFriendship: "Este plato representa a Norah y la forma delicada en la que se fue construyendo nuestra amistad con ella. Al inicio era una persona reservada, tímida y silenciosa, que observaba más de lo que hablaba. Con el tiempo, fue encontrando confianza y seguridad, tanto dentro como fuera del grupo. El sorbet, fresco y equilibrado, refleja esa suavidad en su forma de sentir. Las capas del plato simbolizan el proceso gradual de apertura emocional y la profundidad de un afecto que no siempre se expresa con palabras. Vínculo Dulce representa una amistad sincera, justa y constante, que se mantiene incluso en los momentos de distancia.",
+    storytellingUniversity: "", // Este campo no fue proporcionado para este plato
     characteristics: [
       "Preparación fría.",
       "Contraste de texturas.",
@@ -63,8 +63,8 @@ export const menuData: Course[] = [
     courseNumber: "Tercer Tiempo",
     title: "SUSURRO SUAVE",
     description: "Gyoza de cerdo y verduras con masa al 25 % de harina de Tenebrio molitor, salsa de soja y ajonjolí.",
-    storytelling: "Alan es la última incorporación al grupo. Nos conocimos mejor cocinando juntos en la cocina, y aunque al inicio el proceso de integración fue lento, con el tiempo empezó a encajar de manera natural. Su personalidad es alegre, genuina y fuerte. La gyoza, cerrada por fuera y llena de sabor en su interior, simboliza esa forma de ser que se descubre poco a poco. Susurro suave representa una amistad que no irrumpe, sino que se construye con paciencia, aceptación y convivencia.",
-    universityStorytelling: "",
+    storytellingFriendship: "Alan es la última incorporación al grupo. Nos conocimos mejor cocinando juntos en la cocina, y aunque al inicio el proceso de integración fue lento, con el tiempo empezó a encajar de manera natural. Su personalidad es alegre, genuina y fuerte. La gyoza, cerrada por fuera y llena de sabor en su interior, simboliza esa forma de ser que se descubre poco a poco. Susurro suave representa una amistad que no irrumpe, sino que se construye con paciencia, aceptación y convivencia.",
+    storytellingUniversity: "", // Este campo no fue proporcionado para este plato
     characteristics: [
       "Cocina asiática reinterpretada.",
       "Enfoque en umami.",
@@ -91,8 +91,8 @@ export const menuData: Course[] = [
     courseNumber: "Cuarto Tiempo",
     title: "PULSO SERENO",
     description: "Ravioles de pollo con masa fresca al 25 % de harina de Tenebrio molitor, salsa aurora y aceite de cebollín.",
-    storytelling: "Patty sin saberlo se convirtió en mi mejor amiga, talvez podría decirse que estábamos destinados a conocernos, pero el destino esperó hasta llegar a la u para vincularnos, sin saber lo parecido que seríamos ella es extrovertida y alegre, pero también reflexiva, con un carácter firme y una tendencia natural a organizar, escuchar y aconsejar. En muchas ocasiones, nuestros amigos acuden a ella en busca de apoyo o claridad. Los ravioles reflejan estructura y orden; el higo aporta dulzura y profundidad. Pulso Sereno simboliza esa energía constante que mantiene el equilibrio del grupo, una presencia que acompaña y sostiene sin imponerse.",
-    universityStorytelling: "",
+    storytellingFriendship: "Patty sin saberlo se convirtió en mi mejor amiga, talvez podría decirse que estábamos destinados a conocernos, pero el destino esperó hasta llegar a la u para vincularnos, sin saber lo parecido que seríamos. Ella es extrovertida y alegre, pero también reflexiva, con un carácter firme y una tendencia natural a organizar, escuchar y aconsejar. En muchas ocasiones, nuestros amigos acuden a ella en busca de apoyo o claridad. Los ravioles reflejan estructura y orden; el higo aporta dulzura y profundidad. Pulso Sereno simboliza esa energía constante que mantiene el equilibrio del grupo, una presencia que acompaña y sostiene sin imponerse.",
+    storytellingUniversity: "", // Este campo no fue proporcionado para este plato
     characteristics: [
       "Pasta fresca artesanal.",
       "Servicio inmediato.",
@@ -119,8 +119,8 @@ export const menuData: Course[] = [
     courseNumber: "Quinto Tiempo",
     title: "VERDE NOBLE",
     description: "Croqueta de yuca con masa al 25 % de harina de Tenebrio molitor, rellena de queso, salsa de aguacate y pollo.",
-    storytelling: "Esta amistad nació entre proyectos académicos y situaciones espontáneas, como aquel trabajo de inglés que terminó con risas, tierra regada y pequeños cactus en macetas. Andrés es una persona tímida, afectuosa y genuina, que quiere de forma sincera. Los ingredientes del plato evocan la tierra, lo simple y lo honesto. Verde Noble representa un cariño limpio, resistente y auténtico, que crece con el tiempo.",
-    universityStorytelling: "",
+    storytellingFriendship: "Esta amistad nació entre proyectos académicos y situaciones espontáneas, como aquel trabajo de inglés que terminó con risas, tierra regada y pequeños cactus en macetas. Andrés es una persona tímida, afectuosa y genuina, que quiere de forma sincera. Los ingredientes del plato evocan la tierra, lo simple y lo honesto. Verde Noble representa un cariño limpio, resistente y auténtico, que crece con el tiempo.",
+    storytellingUniversity: "", // Este campo no fue proporcionado para este plato
     characteristics: [
       "Fritura controlada.",
       "Producto de contraste.",
@@ -147,11 +147,11 @@ export const menuData: Course[] = [
     courseNumber: "Sexto Tiempo",
     title: "ENCUENTRO CÁLIDO",
     description: "Tarta Fraisier con bizcocho al 25 % de harina de Tenebrio molitor, crema pastelera y gel de maracuyá.",
-    storytelling: "Vanessa no formó parte del grupo desde el inicio, pero cuando llegó, encajó de manera natural. Su integración fue rápida, y con poco tiempo se construyó una cercanía real. Siempre está cuando se la necesita es generosa, bondadosa y una persona en quien confiar. Este postre, compuesto por capas, simboliza las relaciones que se forman poco a poco. Encuentro Cálido representa el momento en el que alguien deja de estar solo y encuentra un espacio compartido.",
-    universityStorytelling: "",
+    storytellingFriendship: "Vanessa no formó parte del grupo desde el inicio, pero cuando llegó, encajó de manera natural. Su integración fue rápida, y con poco tiempo se construyó una cercanía real. Siempre está cuando se la necesita, es generosa, bondadosa y una persona en quien confiar. Este postre, compuesto por capas, simboliza las relaciones que se forman poco a poco. Encuentro Cálido representa el momento en el que alguien deja de estar solo y encuentra un espacio compartido.",
+    storytellingUniversity: "", // Este campo no fue proporcionado para este plato
     characteristics: [
       "Pastelería estratificada.",
-      "Técnicas de precisión.",
+      "Técnicas de precisión."
     ],
     steps: [
       "Bizcocho.",
@@ -172,11 +172,11 @@ export const menuData: Course[] = [
     courseNumber: "Séptimo Tiempo",
     title: "CONTRASTE DULCE",
     description: "Cheesecake invertido con base al 25 % de harina de Tenebrio molitor, frutos rojos y chocolate rosado.",
-    storytelling: "Este plato representa a Erick. Su humor distinto y su forma particular de ver el mundo encajaron con lo poco convencional de nuestro grupo, y terminaron enriqueciendo la dinámica del grupo. El cheesecake invertido simboliza esa ruptura de lo tradicional. Contraste Dulce celebra la diferencia como un valor que fortalece la amistad.",
-    universityStorytelling: "",
+    storytellingFriendship: "Este plato representa a Erick. Su humor distinto y su forma particular de ver el mundo encajaron con lo poco convencional de nuestro grupo, y terminaron enriqueciendo la dinámica del grupo. El cheesecake invertido simboliza esa ruptura de lo tradicional. Contraste Dulce celebra la diferencia como un valor que fortalece la amistad.",
+    storytellingUniversity: "", // Este campo no fue proporcionado para este plato
     characteristics: [
       "Postre contemporáneo.",
-      "Juego visual y sensorial.",
+      "Juego visual y sensorial."
     ],
     steps: [
       "Base horneada.",
@@ -198,11 +198,11 @@ export const menuData: Course[] = [
     courseNumber: "Octavo Tiempo",
     title: "BRUMA ROSA",
     description: "Licor cremoso de pétalos de rosa con 25 % de harina de Tenebrio molitor, acompañado de naranja deshidratada.",
-    storytelling: "Este último plato representa a Thalía y cierra el menú. Su amistad se construyó con el tiempo, de forma silenciosa y constante. Es una presencia suave, que acompaña y permanece. Ella ha sido una amiga incondicional que nos ha acompañado en momentos alegres y tristes, y siempre ha sido fiel a nosotros, además de ser una persona muy serena ella se ha convertido en una de nuestras mejores amistades que si la necesitamos ella está para ayudarnos. El licor, delicado y persistente, simboliza los recuerdos que se quedan. Bruma Rosa representa la memoria compartida, el cierre emocional del recorrido y la permanencia de la amistad.",
-    universityStorytelling: "",
+    storytellingFriendship: "Este último plato representa a Thalía y cierra el menú. Su amistad se construyó con el tiempo, de forma silenciosa y constante. Es una presencia suave, que acompaña y permanece. Ella ha sido una amiga incondicional que nos ha acompañado en momentos alegres y tristes, y siempre ha sido fiel a nosotros, además de ser una persona muy serena. Ella se ha convertido en una de nuestras mejores amistades; si la necesitamos, ella está para ayudarnos. El licor, delicado y persistente, simboliza los recuerdos que se quedan. Bruma Rosa representa la memoria compartida, el cierre emocional del recorrido y la permanencia de la amistad.",
+    storytellingUniversity: "", // Este campo no fue proporcionado para este plato
     characteristics: [
       "Preparación líquida.",
-      "Cierre aromático del menú.",
+      "Cierre aromático del menú."
     ],
     steps: [
       "Maceración.",
@@ -219,4 +219,15 @@ export const menuData: Course[] = [
     ],
     academicSustenance: "El desarrollo de productos innovadores a partir de insectos contribuye al avance científico y gastronómico sostenible (Van Huis, 2020).",
   },
+];
+
+export const references = [
+  "FAO. (2013). Edible insects: Future prospects for food and feed security.",
+  "Van Huis, A. et al. (2013). Edible insects.",
+  "Van Huis, A. (2020). Insects as food and feed.",
+  "Oonincx, D. G. A. B., & de Boer, I. J. M. (2012). Environmental impact of insect production.",
+  "Rumpold, B., & Schlüter, O. (2013). Nutritional composition of edible insects.",
+  "Caparros Megido, R. et al. (2014). Consumer acceptance of insect-based foods.",
+  "Hartmann, C., & Siegrist, M. (2017). Consumer perception of insects as food.",
+  "Contreras, J., & Gracia, M. (2005). Alimentación y cultura: Perspectivas antropológicas.",
 ];

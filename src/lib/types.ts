@@ -3,8 +3,8 @@ export interface Course {
   courseNumber: string;
   title: string;
   description: string;
-  storytelling: string;
-  universityStorytelling: string;
+  storytellingFriendship: string;
+  storytellingUniversity: string;
   characteristics: string[];
   steps: string[];
   techniques: string;
