@@ -49,28 +49,10 @@
       "imageHint": "rose liqueur"
     },
     {
-      "id": "tenebrio-eggs",
-      "description": "Huevos,Pequeños y blancos, marcan el inicio del ciclo.",
-      "imageUrl": "https://images.unsplash.com/photo-1620576324241-d73c7809633e",
-      "imageHint": "insect eggs"
-    },
-    {
-      "id": "tenebrio-larva",
-      "description": "Larva,La conocida etapa de gusano de la harina.",
-      "imageUrl": "https://images.unsplash.com/photo-1618235314358-75765954e3f3",
-      "imageHint": "mealworm larva"
-    },
-    {
-      "id": "tenebrio-pupa",
-      "description": "Pupa,La fase de transformación inactiva.",
-      "imageUrl": "https://images.unsplash.com/photo-1695026248337-236551b42a98",
-      "imageHint": "insect pupa"
-    },
-    {
-      "id": "tenebrio-adult",
-      "description": "Adulto,El escarabajo oscuro completa el ciclo.",
-      "imageUrl": "https://images.unsplash.com/photo-1599623933563-3df830b0b82f",
-      "imageHint": "darkling beetle"
+      "id": "tenebrio-lifecycle-diagram",
+      "description": "Diagram showing the life cycle of Tenebrio molitor: eggs, larva, pupa, and adult beetle.",
+      "imageUrl": "https://www.protiberia.com/wp-content/uploads/2021/04/ciclo-de-vida-Tenebrio-molitor-1.jpg",
+      "imageHint": "insect lifecycle"
     }
   ]
 }

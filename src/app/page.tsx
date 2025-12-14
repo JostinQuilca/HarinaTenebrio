@@ -3,13 +3,6 @@ import type { Course } from "@/lib/types";
 import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCream2, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, MoveRight, Users, University, Droplets } from "lucide-react";
 import Image from "next/image";
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-import {
   Dialog,
   DialogContent,
   DialogHeader,
@@ -127,7 +120,7 @@ const CourseCard = ({ course }: { course: Course }) => {
 };
 
 export default function OchoTiemposPage() {
-  const tenebrioLifecycleImages = PlaceHolderImages.filter(img => img.id.startsWith('tenebrio'));
+  const tenebrioLifecycleImage = PlaceHolderImages.find(img => img.id === 'tenebrio-lifecycle-diagram');
 
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
@@ -158,38 +151,20 @@ export default function OchoTiemposPage() {
                 Desde el huevo hasta el escarabajo adulto, el Tenebrio molitor ofrece una fuente de proteína sostenible en cada una de sus etapas clave.
               </p>
           </div>
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full max-w-4xl mx-auto"
-          >
-            <CarouselContent>
-              {tenebrioLifecycleImages.map((image) => (
-                <CarouselItem key={image.id} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1">
-                    <div className="rounded-lg overflow-hidden aspect-w-1 aspect-h-1 bg-muted">
-                       <Image
-                          src={image.imageUrl}
-                          alt={image.description}
-                          width={600}
-                          height={600}
-                          className="object-cover w-full h-full"
-                          data-ai-hint={image.imageHint}
-                        />
-                    </div>
-                    <div className="pt-4 text-center">
-                      <h4 className="font-headline text-lg text-primary">{image.description.split(',')[0]}</h4>
-                      <p className="text-xs text-muted-foreground mt-1">{image.description.split(',')[1]}</p>
-                    </div>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+          {tenebrioLifecycleImage && (
+            <div className="w-full max-w-3xl mx-auto">
+              <div className="rounded-lg overflow-hidden aspect-w-16 aspect-h-9 bg-muted">
+                  <Image
+                    src={tenebrioLifecycleImage.imageUrl}
+                    alt={tenebrioLifecycleImage.description}
+                    width={1200}
+                    height={675}
+                    className="object-contain w-full h-full"
+                    data-ai-hint={tenebrioLifecycleImage.imageHint}
+                  />
+              </div>
+            </div>
+          )}
         </section>
         
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
