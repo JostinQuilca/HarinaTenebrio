@@ -1,7 +1,7 @@
 
 import { menuData } from "@/lib/data";
 import type { Course } from "@/lib/types";
-import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCream2, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater } from "lucide-react";
+import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCream2, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, MoveRight } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -26,8 +26,8 @@ const CourseCard = ({ course }: { course: Course }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="bg-transparent rounded-lg overflow-hidden group cursor-pointer text-left">
-          <div className="p-6 flex flex-col items-start gap-4">
+        <div className="bg-transparent rounded-lg overflow-hidden group cursor-pointer text-left flex flex-col h-full">
+          <div className="p-6 flex flex-col items-start gap-4 flex-grow">
             <div className="flex items-center gap-6">
               {icons[course.id] || <Dessert className="w-12 h-12 text-accent" strokeWidth={1} />}
               <div>
@@ -36,6 +36,12 @@ const CourseCard = ({ course }: { course: Course }) => {
               </div>
             </div>
             <p className="mt-2 text-sm text-muted-foreground text-pretty flex-grow leading-relaxed">{course.description}</p>
+          </div>
+          <div className="p-6 pt-0 mt-auto">
+            <p className="flex items-center gap-2 text-xs font-bold text-accent uppercase tracking-widest group-hover:underline">
+              Ver más
+              <MoveRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </p>
           </div>
         </div>
       </DialogTrigger>
