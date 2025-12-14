@@ -4,6 +4,7 @@ export interface Course {
   title: string;
   description: string;
   storytelling: string;
+  universityStorytelling: string;
   characteristics: string[];
   steps: string[];
   techniques: string;

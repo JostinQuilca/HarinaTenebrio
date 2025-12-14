@@ -26,7 +26,7 @@ const CourseCard = ({ course }: { course: Course }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="bg-transparent rounded-lg overflow-hidden group cursor-pointer text-left flex flex-col h-full">
+        <div className="bg-card rounded-lg overflow-hidden group cursor-pointer text-left flex flex-col h-full transition-shadow duration-300 hover:shadow-xl">
           <div className="p-6 flex flex-col items-start gap-4 flex-grow">
             <div className="flex items-center gap-6">
               {icons[course.id] || <Dessert className="w-12 h-12 text-accent" strokeWidth={1} />}
@@ -54,8 +54,22 @@ const CourseCard = ({ course }: { course: Course }) => {
         <ScrollArea className="max-h-[70vh] pr-6">
           <div className="space-y-6 text-sm py-4">
             <div className="space-y-3">
-              <h4 className="flex items-center gap-3 font-headline text-base text-primary"><BookHeart className="w-4 h-4 text-accent flex-shrink-0"/>Storytelling</h4>
+              <h4 className="flex items-center gap-3 font-headline text-base text-primary"><BookHeart className="w-4 h-4 text-accent flex-shrink-0"/>Storytelling (Amistad)</h4>
               <p className="text-muted-foreground text-pretty leading-relaxed text-xs">{course.storytelling}</p>
+            </div>
+            
+            {course.universityStorytelling && (
+              <div className="space-y-3">
+                <h4 className="flex items-center gap-3 font-headline text-base text-primary"><School className="w-4 h-4 text-accent flex-shrink-0"/>Storytelling (Vida Universitaria)</h4>
+                <p className="text-muted-foreground text-pretty leading-relaxed text-xs">{course.universityStorytelling}</p>
+              </div>
+            )}
+
+            <div className="space-y-3">
+                <h4 className="flex items-center gap-3 font-headline text-base text-primary"><Leaf className="w-4 h-4 text-accent flex-shrink-0"/>Características</h4>
+                <ul className="list-disc list-outside pl-4 space-y-1 text-muted-foreground text-xs">
+                  {course.characteristics.map((characteristic, i) => <li key={i}>{characteristic}</li>)}
+                </ul>
             </div>
 
             <div className="space-y-3">
@@ -71,7 +85,7 @@ const CourseCard = ({ course }: { course: Course }) => {
                 <p className="text-muted-foreground">{course.techniques}</p>
               </div>
               <div className="space-y-2">
-                <h4 className="flex items-center gap-2 font-headline text-primary"><Smile className="w-3.5 h-3.5 text-accent flex-shrink-0"/>Perfil</h4>
+                <h4 className="flex items-center gap-2 font-headline text-primary"><Smile className="w-3.5 h-3.5 text-accent flex-shrink-0"/>Perfil Sensorial</h4>
                 <p className="text-muted-foreground">{course.sensoryProfile}</p>
               </div>
             </div>
@@ -99,14 +113,14 @@ const CourseCard = ({ course }: { course: Course }) => {
 export default function OchoTiemposPage() {
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
-      <header className="py-24 md:py-32">
+      <header className="py-24 md:py-32 bg-secondary/30">
         <div className="container mx-auto text-center px-4">
-          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl text-primary leading-tight tracking-tight">Aplicación de harina de Tenebrio Molitor en un menú de 8 tiempos</h1>
+          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl text-primary leading-tight tracking-tight">Menú de Ocho Tiempos</h1>
         </div>
       </header>
       
       <main className="flex-grow container mx-auto px-4 pb-12 md:pb-20">
-        <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
+        <div className="text-center max-w-3xl mx-auto my-16 md:my-20">
             <h2 className="font-headline text-2xl text-primary">Un Viaje Culinario a través de la Vida Universitaria</h2>
             <div className="flex justify-center my-6">
                 <div className="w-24 h-px bg-accent"></div>
@@ -116,14 +130,14 @@ export default function OchoTiemposPage() {
             </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
+        <div className="grid md:grid-cols-2 gap-x-8 gap-y-12">
           {menuData.map((course) => (
             <CourseCard key={course.id} course={course} />
           ))}
         </div>
       </main>
       
-      <footer className="py-10 mt-16 bg-transparent">
+      <footer className="py-10 mt-16 bg-secondary/30">
         <div className="container mx-auto text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Un concepto gastronómico innovador.</p>
         </div>
