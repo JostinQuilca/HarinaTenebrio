@@ -4,48 +4,48 @@
 
 @layer base {
   :root {
-    --background: 20 14% 96%;
-    --foreground: 20 10% 20%;
-    --card: 0 0% 100%;
-    --card-foreground: 20 10% 20%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 10% 20%;
-    --primary: 20 10% 25%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 20 8% 90%;
-    --secondary-foreground: 20 10% 25%;
-    --muted: 20 8% 94%;
-    --muted-foreground: 20 5% 45%;
-    --accent: 30 70% 50%; /* Golden/Ochre accent */
-    --accent-foreground: 20 10% 10%;
+    --background: 40 10% 98%; /* Off-white/Linen */
+    --foreground: 25 15% 15%; /* Dark, slightly warm gray */
+    --card: 40 10% 99%; /* Slightly lighter than background */
+    --card-foreground: 25 15% 15%;
+    --popover: 40 10% 99%;
+    --popover-foreground: 25 15% 15%;
+    --primary: 25 20% 18%; /* Charcoal */
+    --primary-foreground: 40 10% 98%;
+    --secondary: 40 10% 92%; /* Light beige */
+    --secondary-foreground: 25 15% 25%;
+    --muted: 40, 8%, 94%;
+    --muted-foreground: 25 10% 40%;
+    --accent: 25 60% 45%; /* Burnt Sienna/Terracotta */
+    --accent-foreground: 40 10% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 20 10% 88%;
-    --input: 20 10% 88%;
-    --ring: 30 70% 50%;
+    --border: 40 10% 90%;
+    --input: 40 10% 90%;
+    --ring: 25 60% 45%;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 20 10% 10%;
-    --foreground: 0 0% 95%;
-    --card: 20 10% 12%;
-    --card-foreground: 0 0% 95%;
-    --popover: 20 10% 12%;
-    --popover-foreground: 0 0% 95%;
-    --primary: 0 0% 90%;
-    --primary-foreground: 20 10% 10%;
-    --secondary: 20 10% 20%;
-    --secondary-foreground: 0 0% 90%;
-    --muted: 20 10% 20%;
-    --muted-foreground: 0 0% 70%;
-    --accent: 30 60% 50%;
-    --accent-foreground: 20 10% 10%;
+    --background: 25 15% 10%; /* Very dark warm gray */
+    --foreground: 40 10% 90%;
+    --card: 25 15% 12%;
+    --card-foreground: 40 10% 90%;
+    --popover: 25 15% 12%;
+    --popover-foreground: 40 10% 90%;
+    --primary: 40 10% 95%;
+    --primary-foreground: 25 15% 10%;
+    --secondary: 25 15% 20%;
+    --secondary-foreground: 40 10% 95%;
+    --muted: 25 15% 20%;
+    --muted-foreground: 40 10% 70%;
+    --accent: 25 55% 55%; /* Lighter Terracotta for dark mode */
+    --accent-foreground: 25 15% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 20 10% 25%;
-    --input: 20 10% 25%;
-    --ring: 30 60% 50%;
+    --border: 25 15% 25%;
+    --input: 25 15% 25%;
+    --ring: 25 55% 55%;
   }
 }
 
