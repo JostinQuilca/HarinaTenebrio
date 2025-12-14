@@ -1,64 +1,28 @@
 {
   "placeholderImages": [
     {
-      "id": "focaccia-bread",
-      "description": "A freshly baked focaccia with cranberries and serrano ham on a wooden board.",
-      "imageUrl": "https://images.unsplash.com/photo-1609501677229-6de2950fc6e7",
-      "imageHint": "focaccia bread"
-    },
-    {
-      "id": "mango-sorbet",
-      "description": "A scoop of vibrant mango sorbet in a chilled glass, garnished with a mint leaf.",
-      "imageUrl": "https://images.unsplash.com/photo-1627373719412-746f5c1e5363",
-      "imageHint": "mango sorbet"
-    },
-    {
-      "id": "gyoza-dumplings",
-      "description": "Pan-fried gyoza dumplings arranged on a plate with a side of soy dipping sauce.",
-      "imageUrl": "https://images.unsplash.com/photo-1589047133531-570405874c6a",
-      "imageHint": "gyoza dumplings"
-    },
-    {
-      "id": "ravioli-pasta",
-      "description": "Plated ravioli with a creamy pink sauce, garnished with fresh herbs.",
-      "imageUrl": "https://images.unsplash.com/photo-1628885823157-4f79371af81a",
-      "imageHint": "ravioli pasta"
-    },
-    {
-      "id": "yuca-croquette",
-      "description": "Golden-brown yuca croquettes served with a creamy avocado dip.",
-      "imageUrl": "https://images.unsplash.com/photo-1747984532528-f926b882f549",
-      "imageHint": "yuca croquette"
-    },
-    {
-      "id": "fraisier-cake",
-      "description": "A slice of elegant Fraisier cake with layers of sponge, cream, and fresh strawberries.",
-      "imageUrl": "https://images.unsplash.com/photo-1632364500567-83bc85fe45bf",
-      "imageHint": "fraisier cake"
-    },
-    {
-      "id": "cheesecake-dessert",
-      "description": "A slice of inverted cheesecake with a berry compote and pink chocolate shavings.",
-      "imageUrl": "https://images.unsplash.com/photo-1707569652892-7993822c9f92",
-      "imageHint": "cheesecake dessert"
-    },
-    {
-      "id": "rose-liqueur",
-      "description": "A small glass of creamy rose liqueur with a dehydrated orange slice on the rim.",
-      "imageUrl": "https://images.unsplash.com/photo-1725790804023-5a75ea143862",
-      "imageHint": "rose liqueur"
-    },
-    {
       "id": "tenebrio-lifecycle-diagram",
       "description": "Diagram showing the life cycle of Tenebrio molitor: eggs, larva, pupa, and adult beetle.",
       "imageUrl": "https://protiberia.com/wp-content/uploads/2022/12/Tenebrio-Molitor-Illustration.svg",
       "imageHint": "insect lifecycle"
     },
     {
-      "id": "tenebrio-farming",
-      "description": "Controlled and sustainable farming of Tenebrio molitor larvae (mealworms) for food production.",
-      "imageUrl": "https://images.unsplash.com/photo-1629117379731-1804be8c8941?w=1200&q=80",
-      "imageHint": "mealworm farm"
+      "id": "traceability-1",
+      "description": "Mealworms in a breeding tray, part of a sustainable insect farm.",
+      "imageUrl": "https://images.unsplash.com/photo-1629117379731-1804be8c8941?w=1200",
+      "imageHint": "mealworm farming"
+    },
+    {
+      "id": "traceability-2",
+      "description": "Close-up of Tenebrio molitor larvae in a controlled environment.",
+      "imageUrl": "https://images.unsplash.com/photo-1617953237589-2d2a6a3b0974?w=1200",
+      "imageHint": "insect breeding"
+    },
+    {
+      "id": "traceability-3",
+      "description": "Technician handling trays in a vertical insect farm.",
+      "imageUrl": "https://images.unsplash.com/photo-1633647160619-33a53237171e?w=1200",
+      "imageHint": "vertical farming"
     }
   ]
 }

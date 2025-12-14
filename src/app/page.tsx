@@ -12,6 +12,13 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 
 const CourseCard = ({ course }: { course: Course }) => {
@@ -123,7 +130,7 @@ const CourseCard = ({ course }: { course: Course }) => {
 
 export default function OchoTiemposPage() {
   const tenebrioLifecycleImage = PlaceHolderImages.find(img => img.id === 'tenebrio-lifecycle-diagram');
-  const traceabilityImage = PlaceHolderImages.find(img => img.id === 'tenebrio-farming');
+  const traceabilityImages = PlaceHolderImages.filter(img => img.id.startsWith('traceability-'));
 
 
   return (
@@ -189,19 +196,29 @@ export default function OchoTiemposPage() {
               Nuestro Tenebrio molitor se cría en un entorno controlado, garantizando un producto de alta calidad y un impacto ambiental mínimo. La trazabilidad completa desde la cría hasta la cosecha asegura un ingrediente puro y sostenible.
             </p>
           </div>
-          {traceabilityImage && (
-            <div className="max-w-4xl mx-auto">
-              <div className="rounded-lg overflow-hidden bg-muted/20 p-4 shadow-sm">
-                <Image
-                  src={traceabilityImage.imageUrl}
-                  alt={traceabilityImage.description}
-                  width={1200}
-                  height={800}
-                  className="object-cover w-full h-full rounded-md"
-                  data-ai-hint={traceabilityImage.imageHint}
-                />
-              </div>
-            </div>
+          {traceabilityImages.length > 0 && (
+            <Carousel className="w-full max-w-2xl mx-auto">
+              <CarouselContent>
+                {traceabilityImages.map((image) => (
+                  <CarouselItem key={image.id}>
+                    <div className="p-1">
+                      <div className="relative aspect-video rounded-lg overflow-hidden bg-muted/20 p-2 shadow-sm">
+                        <Image
+                          src={image.imageUrl}
+                          alt={image.description}
+                          fill
+                          className="object-cover w-full h-full rounded"
+                          data-ai-hint={image.imageHint}
+                        />
+                      </div>
+                      <p className="text-center text-xs text-muted-foreground mt-2">{image.description}</p>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="ml-12" />
+              <CarouselNext className="mr-12" />
+            </Carousel>
           )}
         </section>
         
