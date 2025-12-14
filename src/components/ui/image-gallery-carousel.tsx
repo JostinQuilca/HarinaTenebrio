@@ -69,8 +69,14 @@ export function ImageGalleryCarousel({
         ))}
       </CarouselContent>
 
-      <CarouselPrevious aria-label="Imagen anterior" />
-      <CarouselNext aria-label="Imagen siguiente" />
+      <CarouselPrevious
+        aria-label="Imagen anterior"
+        className="absolute left-2 top-1/2 -translate-y-1/2 md:-left-12 bg-black/20 text-white border-none hover:bg-black/50"
+      />
+      <CarouselNext
+        aria-label="Imagen siguiente"
+        className="absolute right-2 top-1/2 -translate-y-1/2 md:-right-12 bg-black/20 text-white border-none hover:bg-black/50"
+      />
     </Carousel>
   );
 }
