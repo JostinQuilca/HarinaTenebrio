@@ -1,7 +1,6 @@
-
 import { menuData, references } from "@/lib/data";
 import type { Course } from "@/lib/types";
-import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCream2, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, MoveRight, Users, University } from "lucide-react";
+import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCream2, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, MoveRight, Users, University, Droplets } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -98,6 +97,13 @@ const CourseCard = ({ course }: { course: Course }) => {
                 </ul>
             </div>
             
+            <div className="space-y-3">
+              <h4 className="flex items-center gap-3 font-headline text-base text-primary">
+                <Droplets className="w-4 h-4 text-accent flex-shrink-0"/>Huella Hídrica ({course.waterFootprintPercentage}%)
+              </h4>
+              <p className="text-muted-foreground text-pretty leading-relaxed text-xs">{course.waterFootprintJustification}</p>
+            </div>
+
             <div className="space-y-3 bg-secondary/50 p-4 rounded-lg">
                 <h4 className="flex items-center gap-3 font-headline text-base text-primary"><School className="w-4 h-4 text-accent flex-shrink-0"/>Sustento Académico</h4>
                 <blockquote className="border-l-2 border-accent pl-3 italic text-muted-foreground text-pretty text-xs">

@@ -29,6 +29,8 @@ export const menuData: Course[] = [
       "ODS 12: Producción y consumo responsables, mediante el uso de ingredientes alternativos sostenibles.",
     ],
     academicSustenance: "El uso de insectos comestibles en productos panarios ha demostrado ser viable tanto sensorial como ambientalmente, favoreciendo modelos alimentarios más sostenibles (Van Huis et al., 2013; FAO, 2013).",
+    waterFootprintPercentage: 65,
+    waterFootprintJustification: "La focaccia tradicional presenta alta huella hídrica por el uso de harina de trigo refinada y embutidos curados. Al reemplazar el 25 % de la harina de trigo por harina de Tenebrio molitor, se reduce el uso de cereales de alto consumo hídrico. El jamón serrano mantiene parte del impacto, por lo que la reducción es moderada.",
   },
   {
     id: 2,
@@ -57,6 +59,8 @@ export const menuData: Course[] = [
       "ODS 13: Acción por el clima, al priorizar técnicas de bajo impacto ambiental.",
     ],
     academicSustenance: "Diversos estudios indican que las preparaciones frías y el uso de ingredientes de bajo impacto reducen la huella ambiental de los alimentos (Oonincx & de Boer, 2012).",
+    waterFootprintPercentage: 40,
+    waterFootprintJustification: "El sorbet tiene una base mayoritariamente frutal y acuosa. La incorporación de harina de Tenebrio molitor al 25 % en elementos estructurales (crumble o base seca) reduce el uso de harinas procesadas. Al no contener lácteos ni proteínas animales intensivas, el impacto hídrico es bajo.",
   },
   {
     id: 3,
@@ -85,6 +89,8 @@ export const menuData: Course[] = [
       "ODS 12: Producción responsable, por la integración de insectos como recurso eficiente.",
     ],
     academicSustenance: "La harina de Tenebrio molitor ha sido ampliamente reconocida como una alternativa sostenible a proteínas tradicionales, con menor huella hídrica y ambiental (Rumpold & Schlüter, 2013).",
+    waterFootprintPercentage: 70,
+    waterFootprintJustification: "El cerdo mantiene una huella hídrica considerable. Sin embargo, el 25 % de sustitución en la masa de la gyoza mediante harina de Tenebrio molitor reduce el consumo de trigo. La presencia de verduras y técnicas de cocción al vapor equilibran el impacto, pero no lo reducen de forma drástica.",
   },
   {
     id: 4,
@@ -113,6 +119,8 @@ export const menuData: Course[] = [
       "ODS 11: Comunidades sostenibles, al fomentar prácticas colaborativas y culturales.",
     ],
     academicSustenance: "La gastronomía es reconocida como una herramienta de cohesión social y transmisión cultural (Contreras & Gracia, 2005).",
+    waterFootprintPercentage: 68,
+    waterFootprintJustification: "La masa fresca y el pollo generan una huella hídrica media-alta. La incorporación del 25 % de harina de Tenebrio molitor en la pasta disminuye el impacto del cereal, pero la proteína aviar mantiene parte del consumo indirecto de agua.",
   },
   {
     id: 5,
@@ -141,6 +149,8 @@ export const menuData: Course[] = [
       "ODS 12: Consumo responsable",
     ],
     academicSustenance: "La integración de ingredientes tradicionales y alternativos fortalece la sostenibilidad alimentaria y cultural (FAO, 2013).",
+    waterFootprintPercentage: 55,
+    waterFootprintJustification: "La yuca posee menor huella hídrica que el trigo, y la sustitución parcial del empanizado por harina de Tenebrio molitor reduce el uso de pan rallado industrial. El queso incrementa el impacto, pero se compensa con el uso de técnicas de fritura controlada y porcionado eficiente.",
   },
   {
     id: 6,
@@ -166,6 +176,8 @@ export const menuData: Course[] = [
       "ODS 12: Producción responsable",
     ],
     academicSustenance: "La reformulación de productos de pastelería con ingredientes alternativos permite innovar sin perder aceptación sensorial (Caparros Megido et al., 2014).",
+    waterFootprintPercentage: 60,
+    waterFootprintJustification: "La repostería tradicional tiene alta huella hídrica debido a lácteos y harina refinada. Al integrar 25 % de harina de Tenebrio molitor en el bizcocho o base, se reduce el consumo de trigo, aunque la crema pastelera mantiene una demanda hídrica moderada.",
   },
   {
     id: 7,
@@ -192,6 +204,8 @@ export const menuData: Course[] = [
       "ODS 12: Producción responsable",
     ],
     academicSustenance: "La aceptación sensorial es clave para la incorporación de nuevos ingredientes en la gastronomía contemporánea (Hartmann & Siegrist, 2017).",
+    waterFootprintPercentage: 72,
+    waterFootprintJustification: "Los productos lácteos (queso crema, crema) son altamente demandantes de agua. La sustitución parcial de la base por harina de Tenebrio molitor reduce el impacto solo en la estructura, por lo que la reducción es limitada frente al total de la receta.",
   },
   {
     id: 8,
@@ -218,6 +232,8 @@ export const menuData: Course[] = [
       "ODS 12: Consumo responsable",
     ],
     academicSustenance: "El desarrollo de productos innovadores a partir de insectos contribuye al avance científico y gastronómico sostenible (Van Huis, 2020).",
+    waterFootprintPercentage: 35,
+    waterFootprintJustification: "El licor presenta bajo impacto hídrico al no requerir cocción prolongada ni ingredientes agrícolas intensivos. La harina de Tenebrio molitor se emplea en microdosis como estabilizante o componente estructural, reduciendo el uso de espesantes industriales y manteniendo una huella hídrica baja.",
   },
 ];
 

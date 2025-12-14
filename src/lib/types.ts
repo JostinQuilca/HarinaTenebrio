@@ -11,4 +11,6 @@ export interface Course {
   sensoryProfile: string;
   ods: string[];
   academicSustenance: string;
+  waterFootprintPercentage: number;
+  waterFootprintJustification: string;
 }
