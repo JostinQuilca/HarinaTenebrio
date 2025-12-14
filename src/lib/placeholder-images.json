@@ -3,73 +3,73 @@
     {
       "id": "focaccia-bread",
       "description": "A freshly baked focaccia with cranberries and serrano ham on a wooden board.",
-      "imageUrl": "https://images.unsplash.com/photo-1609501677229-6de2950fc6e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmb2NhY2NpYSUyMGJyZWFkfGVufDB8fHx8MTc2NTU0Mjk3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1609501677229-6de2950fc6e7",
       "imageHint": "focaccia bread"
     },
     {
       "id": "mango-sorbet",
       "description": "A scoop of vibrant mango sorbet in a chilled glass, garnished with a mint leaf.",
-      "imageUrl": "https://images.unsplash.com/photo-1627373719412-746f5c1e5363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW5nbyUyMHNvcmJldHxlbnwwfHx8fDE3NjU2NDc0ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1627373719412-746f5c1e5363",
       "imageHint": "mango sorbet"
     },
     {
       "id": "gyoza-dumplings",
       "description": "Pan-fried gyoza dumplings arranged on a plate with a side of soy dipping sauce.",
-      "imageUrl": "https://images.unsplash.com/photo-1589047133531-570405874c6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z3lvemElMjBkdW1wbGluZ3N8ZW58MHx8fHwxNzY1NjQ3NDg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589047133531-570405874c6a",
       "imageHint": "gyoza dumplings"
     },
     {
       "id": "ravioli-pasta",
       "description": "Plated ravioli with a creamy pink sauce, garnished with fresh herbs.",
-      "imageUrl": "https://images.unsplash.com/photo-1628885823157-4f79371af81a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxyYXZpb2xpJTIwcGFzdGF8ZW58MHx8fHwxNzY1NjQ3NDg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628885823157-4f79371af81a",
       "imageHint": "ravioli pasta"
     },
     {
       "id": "yuca-croquette",
       "description": "Golden-brown yuca croquettes served with a creamy avocado dip.",
-      "imageUrl": "https://images.unsplash.com/photo-1747984532528-f926b882f549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx5dWNhJTIwY3JvcXVldHRlfGVufDB8fHx8MTc2NTY0NzQ4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1747984532528-f926b882f549",
       "imageHint": "yuca croquette"
     },
     {
       "id": "fraisier-cake",
       "description": "A slice of elegant Fraisier cake with layers of sponge, cream, and fresh strawberries.",
-      "imageUrl": "https://images.unsplash.com/photo-1632364500567-83bc85fe45bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmcmFpc2llciUyMGNha2V8ZW58MHx8fHwxNzY1NjQ3NDg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1632364500567-83bc85fe45bf",
       "imageHint": "fraisier cake"
     },
     {
       "id": "cheesecake-dessert",
       "description": "A slice of inverted cheesecake with a berry compote and pink chocolate shavings.",
-      "imageUrl": "https://images.unsplash.com/photo-1707569652892-7993822c9f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjaGVlc2VjYWtlJTIwZGVzc2VydHxlbnwwfHx8fDE3NjU2NDc0ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1707569652892-7993822c9f92",
       "imageHint": "cheesecake dessert"
     },
     {
       "id": "rose-liqueur",
       "description": "A small glass of creamy rose liqueur with a dehydrated orange slice on the rim.",
-      "imageUrl": "https://images.unsplash.com/photo-1725790804023-5a75ea143862?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb3NlJTIwbGlxdWV1cnxlbnwwfHx8fDE3NjU2NDc0ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1725790804023-5a75ea143862",
       "imageHint": "rose liqueur"
     },
     {
       "id": "tenebrio-eggs",
       "description": "Huevos,Pequeños y blancos, marcan el inicio del ciclo.",
-      "imageUrl": "https://images.unsplash.com/photo-1620576324241-d73c7809633e?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1620576324241-d73c7809633e",
       "imageHint": "insect eggs"
     },
     {
       "id": "tenebrio-larva",
       "description": "Larva,La conocida etapa de gusano de la harina.",
-      "imageUrl": "https://images.unsplash.com/photo-1618235314358-75765954e3f3?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1618235314358-75765954e3f3",
       "imageHint": "mealworm larva"
     },
     {
       "id": "tenebrio-pupa",
       "description": "Pupa,La fase de transformación inactiva.",
-      "imageUrl": "https://images.unsplash.com/photo-1695026248337-236551b42a98?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1695026248337-236551b42a98",
       "imageHint": "insect pupa"
     },
     {
       "id": "tenebrio-adult",
       "description": "Adulto,El escarabajo oscuro completa el ciclo.",
-      "imageUrl": "https://images.unsplash.com/photo-1599623933563-3df830b0b82f?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1599623933563-3df830b0b82f",
       "imageHint": "darkling beetle"
     }
   ]
