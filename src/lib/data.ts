@@ -7,7 +7,7 @@ export const menuData: Course[] = [
     title: "PRIMER HOGAR",
     description: "Focaccia de arándanos y jamón serrano elaborada con sustitución del 25 % de harina de trigo por harina de Tenebrio molitor, acompañada de mantequilla saborizada y queso crema.",
     storytellingFriendship: "Este primer plato representa el inicio de todo. Nuestra amistad comenzó incluso antes de ingresar oficialmente a la universidad, durante el curso de nivelación, cuando el contacto era únicamente virtual. Aun así, se generó una conexión inmediata. El primer día presencial, sin planearlo demasiado, nos sentamos juntos y desde ese momento hemos compartido la mayoría de los procesos académicos y personales. Como el pan, esta amistad ha sido base y sostén. Ha estado presente en proyectos, discusiones, desacuerdos y reconciliaciones, pero nunca se ha roto. Los arándanos simbolizan los momentos de alegría y risa constante; el jamón serrano representa el paso del tiempo y la madurez que se va construyendo con los años. Primer Hogar es ese espacio seguro donde todo comenzó y al que siempre se puede regresar.",
-    storytellingUniversity: "Este primer tiempo simboliza el inicio de la vida universitaria, el momento en que el estudiante abandona lo conocido para adentrarse en un nuevo entorno académico. El azahar, flor asociada al comienzo de los ciclos, representa el primer contacto con el conocimiento formal, mientras que la focaccia remite a lo familiar. La harina de Tenebrio molitor introduce la innovación y el pensamiento crítico, elementos fundamentales del proceso formativo universitario.",
+    storytellingUniversity: "",
     characteristics: [
       "Preparación panaria contemporánea.",
       "Integración de ingredientes alternativos.",
