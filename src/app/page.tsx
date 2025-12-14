@@ -1,6 +1,6 @@
 import { menuData, references } from "@/lib/data";
 import type { Course } from "@/lib/types";
-import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCream2, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, MoveRight, Users, University, Droplets } from "lucide-react";
+import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCreamBowl, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, MoveRight, Users, University, Droplets, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import {
   Dialog,
@@ -11,11 +11,13 @@ import {
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+
 
 const CourseCard = ({ course }: { course: Course }) => {
   const icons: { [key: number]: React.ReactNode } = {
     1: <Wheat className="w-12 h-12 text-accent" strokeWidth={1} />,
-    2: <IceCream2 className="w-12 h-12 text-accent" strokeWidth={1} />,
+    2: <IceCreamBowl className="w-12 h-12 text-accent" strokeWidth={1} />,
     3: <CookingPot className="w-12 h-12 text-accent" strokeWidth={1} />,
     4: <Shell className="w-12 h-12 text-accent" strokeWidth={1} />,
     5: <Bean className="w-12 h-12 text-accent" strokeWidth={1} />,
@@ -141,30 +143,38 @@ export default function OchoTiemposPage() {
             </p>
         </div>
 
-        <section className="mb-16 md:mb-24">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-              <h2 className="font-headline text-3xl text-primary">El Ciclo de Vida del Tenebrio Molitor</h2>
-              <div className="flex justify-center my-4">
-                  <div className="w-20 h-px bg-accent"></div>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                Desde el huevo hasta el escarabajo adulto, el Tenebrio molitor ofrece una fuente de proteína sostenible en cada una de sus etapas clave.
-              </p>
-          </div>
-          {tenebrioLifecycleImage && (
-            <div className="w-full max-w-3xl mx-auto">
-              <div className="rounded-lg overflow-hidden aspect-w-16 aspect-h-9 bg-muted/20 p-4">
-                  <Image
-                    src={tenebrioLifecycleImage.imageUrl}
-                    alt={tenebrioLifecycleImage.description}
-                    width={1200}
-                    height={675}
-                    className="object-contain w-full h-full"
-                    data-ai-hint={tenebrioLifecycleImage.imageHint}
-                  />
-              </div>
-            </div>
-          )}
+        <section className="mb-16 md:mb-24 max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1" className="border-b-0">
+              <AccordionTrigger className="hover:no-underline">
+                <div className="text-center w-full">
+                  <h2 className="font-headline text-3xl text-primary">El Ciclo de Vida del Tenebrio Molitor</h2>
+                  <div className="flex justify-center my-4">
+                      <div className="w-20 h-px bg-accent"></div>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
+                    Desde el huevo hasta el escarabajo adulto, el Tenebrio molitor ofrece una fuente de proteína sostenible en cada una de sus etapas clave. Haz clic para ver el diagrama.
+                  </p>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                {tenebrioLifecycleImage && (
+                  <div className="w-full pt-8">
+                    <div className="rounded-lg overflow-hidden bg-muted/20 p-4">
+                        <Image
+                          src={tenebrioLifecycleImage.imageUrl}
+                          alt={tenebrioLifecycleImage.description}
+                          width={1200}
+                          height={675}
+                          className="object-contain w-full h-full"
+                          data-ai-hint={tenebrioLifecycleImage.imageHint}
+                        />
+                    </div>
+                  </div>
+                )}
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </section>
         
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
