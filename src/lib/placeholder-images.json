@@ -53,6 +53,12 @@
       "description": "Diagram showing the life cycle of Tenebrio molitor: eggs, larva, pupa, and adult beetle.",
       "imageUrl": "https://protiberia.com/wp-content/uploads/2022/12/Tenebrio-Molitor-Illustration.svg",
       "imageHint": "insect lifecycle"
+    },
+    {
+      "id": "tenebrio-farming",
+      "description": "Controlled and sustainable farming of Tenebrio molitor larvae (mealworms) for food production.",
+      "imageUrl": "https://images.unsplash.com/photo-1629117379731-1804be8c8941?w=1200&q=80",
+      "imageHint": "mealworm farm"
     }
   ]
 }

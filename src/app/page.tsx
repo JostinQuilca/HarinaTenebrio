@@ -1,6 +1,6 @@
 import { menuData, references } from "@/lib/data";
 import type { Course } from "@/lib/types";
-import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCreamBowl, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, MoveRight, Users, University, Droplets, ChevronDown } from "lucide-react";
+import { BookHeart, FlaskConical, Leaf, ListOrdered, School, Smile, Wheat, IceCreamBowl, CookingPot, Shell, Bean, CakeSlice, Dessert, GlassWater, MoveRight, Users, University, Droplets, ChevronDown, Sprout } from "lucide-react";
 import Image from "next/image";
 import {
   Dialog,
@@ -123,6 +123,8 @@ const CourseCard = ({ course }: { course: Course }) => {
 
 export default function OchoTiemposPage() {
   const tenebrioLifecycleImage = PlaceHolderImages.find(img => img.id === 'tenebrio-lifecycle-diagram');
+  const traceabilityImage = PlaceHolderImages.find(img => img.id === 'tenebrio-farming');
+
 
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
@@ -175,6 +177,32 @@ export default function OchoTiemposPage() {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+        </section>
+
+        <section className="mb-16 md:mb-24">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="font-headline text-3xl text-primary">Trazabilidad y Sostenibilidad</h2>
+            <div className="flex justify-center my-4">
+                <div className="w-20 h-px bg-accent"></div>
+            </div>
+            <p className="text-muted-foreground leading-relaxed text-sm mb-8">
+              Nuestro Tenebrio molitor se cría en un entorno controlado, garantizando un producto de alta calidad y un impacto ambiental mínimo. La trazabilidad completa desde la cría hasta la cosecha asegura un ingrediente puro y sostenible.
+            </p>
+          </div>
+          {traceabilityImage && (
+            <div className="max-w-4xl mx-auto">
+              <div className="rounded-lg overflow-hidden bg-muted/20 p-4 shadow-sm">
+                <Image
+                  src={traceabilityImage.imageUrl}
+                  alt={traceabilityImage.description}
+                  width={1200}
+                  height={800}
+                  className="object-cover w-full h-full rounded-md"
+                  data-ai-hint={traceabilityImage.imageHint}
+                />
+              </div>
+            </div>
+          )}
         </section>
         
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
