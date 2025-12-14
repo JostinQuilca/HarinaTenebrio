@@ -97,7 +97,6 @@ export default function OchoTiemposPage() {
       <header className="py-16 md:py-24 bg-muted/50 border-b border-border/60">
         <div className="container mx-auto text-center px-4">
           <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl text-primary leading-tight tracking-tight">Aplicación de harina de Tenebrio Molitor en un menú de 8 tiempos</h1>
-          <p className="mt-4 text-lg md:text-xl text-primary/80 tracking-wide">Ocho Tiempos</p>
         </div>
       </header>
       
