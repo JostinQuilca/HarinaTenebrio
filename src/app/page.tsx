@@ -121,7 +121,6 @@ export default function OchoTiemposPage() {
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
       <header className="relative py-24 md:py-32 bg-gradient-to-b from-background to-secondary/30">
         <div className="container mx-auto text-center px-4">
-          <h2 className="font-headline text-lg md:text-xl text-accent font-semibold tracking-wider">Un Menú Conceptual</h2>
           <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl text-primary leading-tight tracking-tight mt-2">Harina de Tenebrio Molitor en 8 Tiempos</h1>
         </div>
       </header>
@@ -133,7 +132,7 @@ export default function OchoTiemposPage() {
                 <div className="w-24 h-px bg-accent"></div>
             </div>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Una travesía que narra las etapas de la vida universitaria. Cada plato es una historia; cada bocado, una lección. Descubra cómo la harina de Tenebrio molitor redefine la gastronomía.
+                La incorporación de ingredientes no convencionales en la cocina profesional representa una oportunidad para replantear los modelos tradicionales de consumo y producción.
             </p>
         </div>
 
