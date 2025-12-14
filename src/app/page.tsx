@@ -176,7 +176,7 @@ export default function OchoTiemposPage() {
           ))}
         </div>
 
-        <div className="mt-16 md:mt-24 grid md:grid-cols-2 gap-8">
+        <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
           <InfoCard
             icon={<Recycle className="w-10 h-10 text-accent" strokeWidth={1.5} />}
             title="El Ciclo de Vida del Tenebrio"
@@ -198,14 +198,22 @@ export default function OchoTiemposPage() {
             )}
           </InfoCard>
 
-          <InfoCard
-            icon={<GalleryHorizontal className="w-10 h-10 text-accent" strokeWidth={1.5} />}
-            title="Trazabilidad y Sostenibilidad"
-            description="Nuestro Tenebrio molitor se cría en un entorno controlado, garantizando un producto de alta calidad y un impacto ambiental mínimo."
-          >
-            <ImageGalleryCarousel images={traceabilityGallery} />
-          </InfoCard>
+          <div className="md:col-span-1">
+             {/* Este div vacío ayuda a mantener el diseño de dos columnas cuando solo hay un InfoCard */}
+          </div>
         </div>
+
+        <div className="mt-16 md:mt-24 text-center">
+          <h2 className="font-headline text-3xl md:text-4xl text-primary">Trazabilidad y Sostenibilidad</h2>
+          <div className="flex justify-center my-6">
+            <div className="w-24 h-px bg-accent"></div>
+          </div>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-10">
+            Nuestro Tenebrio molitor se cría en un entorno controlado, garantizando un producto de alta calidad y un impacto ambiental mínimo.
+          </p>
+          <ImageGalleryCarousel images={traceabilityGallery} />
+        </div>
+
       </main>
       
       <footer className="py-12 mt-16 bg-secondary/30">
@@ -223,3 +231,5 @@ export default function OchoTiemposPage() {
     </div>
   );
 }
+
+    
