@@ -12,7 +12,6 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ImageGalleryCarousel } from "@/components/ui/image-gallery-carousel";
 
 const CourseCard = ({ course }: { course: Course }) => {
   const icons: { [key: number]: React.ReactNode } = {
@@ -123,7 +122,7 @@ const CourseCard = ({ course }: { course: Course }) => {
 
 export default function OchoTiemposPage() {
   const tenebrioLifecycleImage = PlaceHolderImages.find(img => img.id === 'tenebrio-lifecycle-diagram');
-  const traceabilityGalleryImages = PlaceHolderImages.filter(img => img.id.startsWith('traceability-gallery-'));
+  const traceabilityImage = PlaceHolderImages.find(img => img.id === 'traceability-main');
 
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
@@ -183,8 +182,18 @@ export default function OchoTiemposPage() {
               Nuestro Tenebrio molitor se cría en un entorno controlado, garantizando un producto de alta calidad y un impacto ambiental mínimo. La trazabilidad completa desde la cría hasta la cosecha asegura un ingrediente puro y sostenible.
             </p>
           </div>
-          {traceabilityGalleryImages.length > 0 && (
-            <ImageGalleryCarousel images={traceabilityGalleryImages} />
+          {traceabilityImage && (
+            <div className="max-w-2xl mx-auto">
+              <div className="relative aspect-video rounded-lg overflow-hidden bg-muted/20 p-2 shadow-sm">
+                <Image
+                  src={traceabilityImage.imageUrl}
+                  alt={traceabilityImage.description}
+                  fill
+                  className="object-cover w-full h-full rounded"
+                  data-ai-hint={traceabilityImage.imageHint}
+                />
+              </div>
+            </div>
           )}
         </section>
         
