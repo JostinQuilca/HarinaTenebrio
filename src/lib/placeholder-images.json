@@ -50,25 +50,25 @@
     },
     {
       "id": "tenebrio-eggs",
-      "description": "Huevos, Pequeños y blancos, marcan el inicio del ciclo.",
+      "description": "Huevos,Pequeños y blancos, marcan el inicio del ciclo.",
       "imageUrl": "https://images.unsplash.com/photo-1620576324241-d73c7809633e?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "insect eggs"
     },
     {
       "id": "tenebrio-larva",
-      "description": "Larva, La conocida etapa de gusano de la harina.",
+      "description": "Larva,La conocida etapa de gusano de la harina.",
       "imageUrl": "https://images.unsplash.com/photo-1618235314358-75765954e3f3?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "mealworm larva"
     },
     {
       "id": "tenebrio-pupa",
-      "description": "Pupa, La fase de transformación inactiva.",
+      "description": "Pupa,La fase de transformación inactiva.",
       "imageUrl": "https://images.unsplash.com/photo-1695026248337-236551b42a98?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "insect pupa"
     },
     {
       "id": "tenebrio-adult",
-      "description": "Adulto, El escarabajo oscuro completa el ciclo.",
+      "description": "Adulto,El escarabajo oscuro completa el ciclo.",
       "imageUrl": "https://images.unsplash.com/photo-1599623933563-3df830b0b82f?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "darkling beetle"
     }

@@ -34,7 +34,7 @@ const CourseCard = ({ course }: { course: Course }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="bg-card rounded-lg overflow-hidden group cursor-pointer text-left flex flex-col h-full shadow-sm border border-border/50 hover:border-accent/50 hover:shadow-md transition-all duration-300">
+        <div className="bg-card rounded-lg overflow-hidden group cursor-pointer text-left flex flex-col h-full shadow-sm border border-transparent hover:border-accent/50 hover:shadow-md transition-all duration-300">
           <div className="p-6 flex flex-col items-start gap-4 flex-grow">
             <div className="flex items-center gap-6">
               {icons[course.id] || <Dessert className="w-12 h-12 text-accent" strokeWidth={1} />}
@@ -211,5 +211,3 @@ export default function OchoTiemposPage() {
     </div>
   );
 }
-
-    
