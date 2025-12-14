@@ -37,7 +37,7 @@ const CourseCard = ({ course }: { course: Course }) => {
             </div>
             <p className="mt-2 text-sm text-muted-foreground text-pretty flex-grow leading-relaxed">{course.description}</p>
           </div>
-          <div className="p-6 pt-0 mt-auto">
+           <div className="p-6 pt-0 mt-auto">
             <p className="flex items-center gap-2 text-xs font-bold text-accent uppercase tracking-widest group-hover:underline">
               Ver más
               <MoveRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -122,7 +122,7 @@ export default function OchoTiemposPage() {
       
       <main className="flex-grow container mx-auto px-4 pb-12 md:pb-20">
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
-            <h2 className="font-headline text-2xl text-primary">Un Viaje Culinario a través de la Vida Universitaria</h2>
+            <h2 className="font-headline text-2xl text-primary">La incorporación de ingredientes no convencionales en la cocina profesional representa una oportunidad para replantear los modelos tradicionales de consumo y producción.</h2>
             <div className="flex justify-center my-6">
                 <div className="w-24 h-px bg-accent"></div>
             </div>
